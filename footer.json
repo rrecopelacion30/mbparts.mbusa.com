@@ -1,0 +1,1747 @@
+{
+    "pageId": "footer",
+    "pageName": "Footer",
+    "pageType": null,
+    "layoutEnabled": true,
+    "moduleCategories": [
+      "header",
+      "images",
+      "text",
+      "search",
+      "categories_products",
+      "forms",
+      "navigation",
+      "footer"
+    ],
+    "VFSPath": "layouts/footer.json",
+    "requiredModules": [
+      "powered_by_rp"
+    ],
+    "scripts": null,
+    "sections": [
+      {
+        "sectionId": "section_45",
+        "htmlId": "",
+        "htmlClasses": "main-footer",
+        "contentWidth": "wide",
+        "backgroundColor": "#f1f1f1",
+        "backgroundImage": "",
+        "textColor": "dark",
+        "display": "normal",
+        "rows": [
+          {
+            "rowId": "row_46",
+            "rowLayout": "3_3_3_3",
+            "htmlId": "",
+            "htmlClasses": "ft-lists-row",
+            "columns": [
+              {
+                "columnId": "column_47",
+                "columnWidth": 3,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_51",
+                    "moduleType": "links_list",
+                    "title": "Links List",
+                    "options": {
+                      "links": {
+                        "name": "Links",
+                        "type": "object",
+                        "default_value": [],
+                        "value": [
+                          {
+                            "linkId": "link_8",
+                            "text": "About Us",
+                            "url": "about",
+                            "target": "",
+                            "icon": "",
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_9",
+                            "text": "Contact Us",
+                            "url": "contact-us",
+                            "target": "",
+                            "icon": "",
+                            "type": "direct"
+                          }
+                        ]
+                      },
+                      "links_title": {
+                        "name": "List Title",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "About"
+                      },
+                      "links_title_url": {
+                        "name": "List Title Link",
+                        "type": "string",
+                        "default_value": null,
+                        "value": ""
+                      },
+                      "header_tag": {
+                        "name": "Header Tag",
+                        "type": "string",
+                        "default_value": "strong",
+                        "value": "h3",
+                        "values": [
+                          {
+                            "id": "strong",
+                            "label": "STRONG"
+                          },
+                          {
+                            "id": "h3",
+                            "label": "H3"
+                          }
+                        ]
+                      },
+                      "links_display": {
+                        "name": "List Display",
+                        "type": "string",
+                        "default_value": "block",
+                        "value": "block",
+                        "values": [
+                          {
+                            "id": "inline",
+                            "label": "Inline"
+                          },
+                          {
+                            "id": "block",
+                            "label": "Block"
+                          },
+                          {
+                            "id": "dropdown",
+                            "label": "Drop Down"
+                          }
+                        ]
+                      },
+                      "list_style": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "none",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "No Style"
+                          },
+                          {
+                            "id": "footer",
+                            "label": "Footer"
+                          },
+                          {
+                            "id": "header",
+                            "label": "Header"
+                          },
+                          {
+                            "id": "navigation",
+                            "label": "Navigation Bar"
+                          },
+                          {
+                            "id": "menu",
+                            "label": "Menu Bar"
+                          }
+                        ]
+                      },
+                      "links_stock": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "none",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "None"
+                          },
+                          {
+                            "id": "mobile_menu",
+                            "label": "Mobile Menu"
+                          },
+                          {
+                            "id": "policies",
+                            "label": "Policies"
+                          }
+                        ]
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": true,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_48",
+                "columnWidth": 3,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_61",
+                    "moduleType": "links_list",
+                    "title": "Information List",
+                    "options": {
+                      "links": {
+                        "name": "Links",
+                        "type": "object",
+                        "default_value": [],
+                        "value": [
+                          {
+                            "linkId": "link_18",
+                            "text": "Sitemap",
+                            "url": "sitemap",
+                            "target": "",
+                            "icon": "",
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_21",
+                            "text": "My Account",
+                            "url": "/account/login",
+                            "target": "",
+                            "icon": "",
+                            "type": "direct"
+                          }
+                        ]
+                      },
+                      "links_title": {
+                        "name": "List Title",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "Information"
+                      },
+                      "links_title_url": {
+                        "name": "List Title Link",
+                        "type": "string",
+                        "default_value": null,
+                        "value": ""
+                      },
+                      "header_tag": {
+                        "name": "Header Tag",
+                        "type": "string",
+                        "default_value": "strong",
+                        "value": "h3",
+                        "values": [
+                          {
+                            "id": "strong",
+                            "label": "STRONG"
+                          },
+                          {
+                            "id": "h3",
+                            "label": "H3"
+                          }
+                        ]
+                      },
+                      "links_display": {
+                        "name": "List Display",
+                        "type": "string",
+                        "default_value": "block",
+                        "value": "block",
+                        "values": [
+                          {
+                            "id": "inline",
+                            "label": "Inline"
+                          },
+                          {
+                            "id": "block",
+                            "label": "Block"
+                          },
+                          {
+                            "id": "dropdown",
+                            "label": "Drop Down"
+                          }
+                        ]
+                      },
+                      "list_style": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "none",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "No Style"
+                          },
+                          {
+                            "id": "footer",
+                            "label": "Footer"
+                          },
+                          {
+                            "id": "header",
+                            "label": "Header"
+                          },
+                          {
+                            "id": "navigation",
+                            "label": "Navigation Bar"
+                          },
+                          {
+                            "id": "menu",
+                            "label": "Menu Bar"
+                          }
+                        ]
+                      },
+                      "links_stock": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "none",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "None"
+                          },
+                          {
+                            "id": "mobile_menu",
+                            "label": "Mobile Menu"
+                          },
+                          {
+                            "id": "policies",
+                            "label": "Policies"
+                          }
+                        ]
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": true,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_49",
+                "columnWidth": 3,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_71",
+                    "moduleType": "links_list",
+                    "title": "Shop List",
+                    "options": {
+                      "links": {
+                        "name": "Links",
+                        "type": "object",
+                        "default_value": [],
+                        "value": [
+                          {
+                            "linkId": "link_29",
+                            "text": "My Order",
+                            "url": "account/order-status",
+                            "target": "",
+                            "icon": "",
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_30",
+                            "text": "Shop Parts",
+                            "url": "v-mercedes-benz",
+                            "target": "",
+                            "icon": "",
+                            "type": "direct"
+                          }
+                        ]
+                      },
+                      "links_title": {
+                        "name": "List Title",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "Shop"
+                      },
+                      "links_title_url": {
+                        "name": "List Title Link",
+                        "type": "string",
+                        "default_value": null,
+                        "value": ""
+                      },
+                      "header_tag": {
+                        "name": "Header Tag",
+                        "type": "string",
+                        "default_value": "strong",
+                        "value": "h3",
+                        "values": [
+                          {
+                            "id": "strong",
+                            "label": "STRONG"
+                          },
+                          {
+                            "id": "h3",
+                            "label": "H3"
+                          }
+                        ]
+                      },
+                      "links_display": {
+                        "name": "List Display",
+                        "type": "string",
+                        "default_value": "block",
+                        "value": "block",
+                        "values": [
+                          {
+                            "id": "inline",
+                            "label": "Inline"
+                          },
+                          {
+                            "id": "block",
+                            "label": "Block"
+                          },
+                          {
+                            "id": "dropdown",
+                            "label": "Drop Down"
+                          }
+                        ]
+                      },
+                      "list_style": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "none",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "No Style"
+                          },
+                          {
+                            "id": "footer",
+                            "label": "Footer"
+                          },
+                          {
+                            "id": "header",
+                            "label": "Header"
+                          },
+                          {
+                            "id": "navigation",
+                            "label": "Navigation Bar"
+                          },
+                          {
+                            "id": "menu",
+                            "label": "Menu Bar"
+                          }
+                        ]
+                      },
+                      "links_stock": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "none",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "None"
+                          },
+                          {
+                            "id": "mobile_menu",
+                            "label": "Mobile Menu"
+                          },
+                          {
+                            "id": "policies",
+                            "label": "Policies"
+                          }
+                        ]
+                      },
+                      "links_image": {
+                        "name": "List Image",
+                        "type": "image_upload",
+                        "default_value": null,
+                        "value": null
+                      },
+                      "footer_link": {
+                        "name": "Footer Link",
+                        "type": "string",
+                        "default_value": null,
+                        "value": null
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": true,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_50",
+                "columnWidth": 3,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_80",
+                    "moduleType": "links_list",
+                    "title": "Policy List",
+                    "options": {
+                      "links": {
+                        "name": "Links",
+                        "type": "object",
+                        "default_value": [],
+                        "value": [
+                          {
+                            "linkId": "link_10",
+                            "text": "Shipping Policy",
+                            "url": "policies/shipping",
+                            "target": "",
+                            "icon": "",
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_11",
+                            "text": "Return Policy",
+                            "url": "policies/returns",
+                            "target": "",
+                            "icon": "",
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_12",
+                            "text": "Privacy Policy",
+                            "url": "https://www.mbusa.com/en/legal-notices",
+                            "target": "_blank",
+                            "icon": "",
+                            "type": "direct"
+                          }
+                        ]
+                      },
+                      "links_title": {
+                        "name": "List Title",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "Policies"
+                      },
+                      "links_title_url": {
+                        "name": "List Title Link",
+                        "type": "string",
+                        "default_value": null,
+                        "value": ""
+                      },
+                      "header_tag": {
+                        "name": "Header Tag",
+                        "type": "string",
+                        "default_value": "strong",
+                        "value": "h3",
+                        "values": [
+                          {
+                            "id": "strong",
+                            "label": "STRONG"
+                          },
+                          {
+                            "id": "h3",
+                            "label": "H3"
+                          }
+                        ]
+                      },
+                      "links_display": {
+                        "name": "List Display",
+                        "type": "string",
+                        "default_value": "block",
+                        "value": "block",
+                        "values": [
+                          {
+                            "id": "inline",
+                            "label": "Inline"
+                          },
+                          {
+                            "id": "block",
+                            "label": "Block"
+                          },
+                          {
+                            "id": "dropdown",
+                            "label": "Drop Down"
+                          }
+                        ]
+                      },
+                      "list_style": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "none",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "No Style"
+                          },
+                          {
+                            "id": "footer",
+                            "label": "Footer"
+                          },
+                          {
+                            "id": "header",
+                            "label": "Header"
+                          },
+                          {
+                            "id": "navigation",
+                            "label": "Navigation Bar"
+                          },
+                          {
+                            "id": "menu",
+                            "label": "Menu Bar"
+                          }
+                        ]
+                      },
+                      "links_stock": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "none",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "None"
+                          },
+                          {
+                            "id": "mobile_menu",
+                            "label": "Mobile Menu"
+                          },
+                          {
+                            "id": "policies",
+                            "label": "Policies"
+                          }
+                        ]
+                      },
+                      "links_image": {
+                        "name": "List Image",
+                        "type": "image_upload",
+                        "default_value": null,
+                        "value": ""
+                      },
+                      "footer_link": {
+                        "name": "Footer Link",
+                        "type": "string",
+                        "default_value": null,
+                        "value": ""
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": true,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "rowId": "row_146",
+            "rowLayout": 12,
+            "htmlId": "",
+            "htmlClasses": "stay-touch-section",
+            "columns": [
+              {
+                "columnId": "column_147",
+                "columnWidth": 12,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_148",
+                    "moduleType": "custom_html",
+                    "title": "Custom HTML",
+                    "options": {
+                      "html_content": {
+                        "name": "Custom HTML Content",
+                        "type": "html_content",
+                        "default_value": "",
+                        "value": "<h3 class=\"heading\">Stay in Touch</h3>"
+                      },
+                      "force_lazy": {
+                        "name": "Lazy Load Images",
+                        "type": "boolean",
+                        "default_value": false,
+                        "value": false
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "custom-heading",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "rowId": "row_153",
+            "rowLayout": "6_6",
+            "htmlId": "",
+            "htmlClasses": "newsletters-section",
+            "columns": [
+              {
+                "columnId": "column_154",
+                "columnWidth": 6,
+                "htmlId": "",
+                "htmlClasses": "col-newsletter",
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_156",
+                    "moduleType": "newsletter_signup",
+                    "title": "Newsletter Signup",
+                    "options": {
+                      "newsletter_title": {
+                        "name": "Title",
+                        "type": "string",
+                        "default_value": "Newsletter Signup",
+                        "value": "Receive the latest news, special offers & exclusives."
+                      },
+                      "box_icon": {
+                        "name": "Icon",
+                        "type": "string",
+                        "default_value": "fa-envelope-o",
+                        "value": "fa-envelope-o"
+                      },
+                      "message": {
+                        "name": "Message",
+                        "type": "string",
+                        "default_value": "Sign up and save more",
+                        "value": "Sign up and save more"
+                      },
+                      "placeholder": {
+                        "name": "Placeholder Text",
+                        "type": "string",
+                        "default_value": "Email Address",
+                        "value": "Your email address"
+                      },
+                      "style": {
+                        "name": "Style",
+                        "type": "select",
+                        "default_value": "newsletter-inline",
+                        "value": "newsletter-inline",
+                        "possible_values": [
+                          {
+                            "value": "newsletter-inline",
+                            "label": "Inline"
+                          },
+                          {
+                            "value": "newsletter-block",
+                            "label": "Block"
+                          }
+                        ]
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_155",
+                "columnWidth": 6,
+                "htmlId": "",
+                "htmlClasses": "col-social-media",
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_218",
+                    "moduleType": "social_links",
+                    "title": "Social Links",
+                    "options": {
+                      "display_title": {
+                        "name": "Display Title",
+                        "type": "string",
+                        "default_value": "Stay Connected",
+                        "value": "Stay Connected"
+                      },
+                      "hide_heading": {
+                        "name": "Hide Heading",
+                        "type": "boolean",
+                        "default_value": false,
+                        "value": true
+                      },
+                      "header_tag": {
+                        "name": "Header Tag",
+                        "type": "select",
+                        "default_value": "strong",
+                        "value": "strong",
+                        "possible_values": [
+                          {
+                            "value": "strong",
+                            "label": "STRONG"
+                          },
+                          {
+                            "value": "h3",
+                            "label": "H3"
+                          }
+                        ]
+                      },
+                      "social_style": {
+                        "name": "Social Icon Style",
+                        "type": "select",
+                        "possible_values": [
+                          {
+                            "value": "style-circle",
+                            "label": "Circle"
+                          },
+                          {
+                            "value": "style-square",
+                            "label": "Square"
+                          },
+                          {
+                            "value": "style-icon",
+                            "label": "Icon"
+                          }
+                        ],
+                        "default_value": "style-circle",
+                        "value": "style-circle"
+                      },
+                      "ebay_style": {
+                        "name": "eBay Icon Style",
+                        "type": "select",
+                        "possible_values": [
+                          {
+                            "value": "ebay-bag",
+                            "label": "Shopping Bag Icon"
+                          },
+                          {
+                            "value": "ebay-text",
+                            "label": "Text"
+                          }
+                        ],
+                        "default_value": "ebay-bag",
+                        "value": "ebay-bag"
+                      },
+                      "layout_style": {
+                        "name": "Layout Style",
+                        "type": "select",
+                        "possible_values": [
+                          {
+                            "value": "layout-inline",
+                            "label": "Inline"
+                          },
+                          {
+                            "value": "layout-stack",
+                            "label": "Stacked"
+                          }
+                        ],
+                        "default_value": "layout-inline",
+                        "value": "layout-inline"
+                      },
+                      "layout_size": {
+                        "name": "Size",
+                        "type": "select",
+                        "possible_values": [
+                          {
+                            "value": "size-small",
+                            "label": "Small"
+                          },
+                          {
+                            "value": "size-medium",
+                            "label": "Medium"
+                          },
+                          {
+                            "value": "size-large",
+                            "label": "Large"
+                          }
+                        ],
+                        "default_value": "size-small",
+                        "value": "size-medium"
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "rowId": "row_169",
+            "rowLayout": 12,
+            "htmlId": "",
+            "htmlClasses": "other-sites-section",
+            "columns": [
+              {
+                "columnId": "column_170",
+                "columnWidth": 12,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_173",
+                    "moduleType": "custom_html",
+                    "title": "Custom HTML",
+                    "options": {
+                      "html_content": {
+                        "name": "Custom HTML Content",
+                        "type": "html_content",
+                        "default_value": "",
+                        "value": "<h3 class=\"heading\">Other Mercedes-Benz Sites</h3>"
+                      },
+                      "force_lazy": {
+                        "name": "Lazy Load Images",
+                        "type": "boolean",
+                        "default_value": false,
+                        "value": false
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "custom-heading",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "rowId": "row_180",
+            "rowLayout": "3_3_3_3",
+            "htmlId": "",
+            "htmlClasses": "mercedes-benz-sites",
+            "columns": [
+              {
+                "columnId": "column_181",
+                "columnWidth": 3,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_189",
+                    "moduleType": "custom_html",
+                    "title": "Custom HTML",
+                    "options": {
+                      "html_content": {
+                        "name": "Custom HTML Content",
+                        "type": "html_content",
+                        "default_value": "",
+                        "value": "<h5><a href=\"http://mbusa.com/\" target=\"_blank\">Mercedes-Benz</a></h5>"
+                      },
+                      "force_lazy": {
+                        "name": "Lazy Load Images",
+                        "type": "boolean",
+                        "default_value": false,
+                        "value": false
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_182",
+                "columnWidth": 3,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_192",
+                    "moduleType": "custom_html",
+                    "title": "Custom HTML",
+                    "options": {
+                      "html_content": {
+                        "name": "Custom HTML Content",
+                        "type": "html_content",
+                        "default_value": "",
+                        "value": "<h5><a href=\"http://www.mbvans.com/\" target=\"_blank\">Mercedes-Benz Vans</a></h5>"
+                      },
+                      "force_lazy": {
+                        "name": "Lazy Load Images",
+                        "type": "boolean",
+                        "default_value": false,
+                        "value": false
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_183",
+                "columnWidth": 3,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_197",
+                    "moduleType": "custom_html",
+                    "title": "Custom HTML",
+                    "options": {
+                      "html_content": {
+                        "name": "Custom HTML Content",
+                        "type": "html_content",
+                        "default_value": "",
+                        "value": "<figure class=\"other-site smart-logo\">\n    <a href=\"http://www.smartusa.com/\" target=\"_blank\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-4 398 1033 227\"><path d=\"M1007.672 398.87c-9.33 0-18.661 6.998-18.661 18.661s6.998 18.661 18.661 18.661c9.33 0 18.661-6.998 18.661-18.661 0-9.33-11.663-18.661-18.661-18.661zm0 32.656c-6.998 0-13.995-6.998-13.995-13.995s6.998-13.995 13.995-13.995 13.995 6.998 13.995 13.995c0 6.998-6.998 13.995-13.995 13.995zm0-11.663c2.333 0 4.665-2.333 4.665-4.665 0 0 0-4.665-4.665-4.665h-9.33v2.333h2.333v13.995h-2.333v2.333h9.33v-2.333h-4.665v-6.998c2.333 0 4.665 4.665 4.665 6.998h2.333c4.665-4.665 2.333-6.998-2.333-6.998zm0-2.332h-4.665v-4.665h4.665c2.333 0 2.333 2.333 2.333 2.333 2.333 2.333-2.333 2.333-2.333 2.333zm-39.654 137.622v-65.312h37.321v-32.656h-37.321v-30.323h-34.989v132.957c2.333 30.323 27.991 55.982 58.314 55.982h18.661v-34.989h-16.328c-13.995 0-25.658-11.663-25.658-25.658zm-128.291-41.987v100.301h34.989V513.166c0-13.995 11.663-25.658 25.658-25.658h16.328v-32.656h-18.661c-30.323 0-53.649 23.326-58.314 58.314zm-102.634-60.647c-44.319 0-81.64 34.989-81.64 81.64s34.989 81.64 81.64 81.64c18.661 0 34.989-6.998 44.319-18.661v13.995h34.989v-74.642c0-48.984-34.989-83.973-79.308-83.973zm2.333 130.625c-25.658 0-46.651-20.993-46.651-48.984 0-25.658 20.993-48.984 46.651-48.984s46.651 20.993 46.651 48.984c0 27.991-20.993 48.984-46.651 48.984zM578.478 452.519c-16.328 0-32.656 6.998-44.319 20.993-11.663-13.995-27.991-20.993-44.319-20.993-30.323 0-55.982 23.326-55.982 53.649v107.298h32.656V510.833c0-13.995 11.663-25.658 25.658-25.658 11.663 0 25.658 6.998 25.658 30.323v97.968h34.989V513.165c0-20.993 11.663-30.323 25.658-30.323s25.658 9.33 25.658 25.658v102.633h34.989V503.835c-4.665-27.991-30.323-51.317-60.647-51.317zm-226.259 65.312c-32.656-4.665-39.654-9.33-39.654-18.661 0-13.995 20.993-16.328 32.656-16.328 16.328 0 32.656 6.998 44.319 16.328l23.326-23.326c-9.33-6.998-30.323-25.658-72.31-25.658s-62.979 25.658-62.979 48.984c0 27.991 20.993 44.319 67.645 48.984 13.995 2.333 27.991 6.998 27.991 18.661 0 23.326-60.647 20.993-86.305-4.665l-23.326 23.326c2.333 2.333 30.323 27.991 72.31 27.991 51.317 0 74.642-25.658 74.642-48.984 0-25.658-18.661-39.654-58.314-46.651zm-205.267-76.975v165.613c20.993-13.995 53.649-58.314 60.647-81.64-6.998-23.326-37.321-69.977-60.647-83.973zM-2.333 524.829c0 55.982 44.319 100.301 100.301 100.301 16.328 0 27.991-4.665 39.654-11.663v-48.984c-11.663 6.998-25.658 11.663-37.321 11.663-30.323 0-53.649-23.326-53.649-51.317s23.326-51.317 53.649-51.317c11.663 0 25.658 4.665 37.321 11.663v-46.651c-11.663-6.998-23.326-11.663-39.654-11.663-53.649-2.333-100.301 41.986-100.301 97.968z\"/></svg>    </a>\n</figure>"
+                      },
+                      "force_lazy": {
+                        "name": "Lazy Load Images",
+                        "type": "boolean",
+                        "default_value": false,
+                        "value": false
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_184",
+                "columnWidth": 3,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_204",
+                    "moduleType": "custom_html",
+                    "title": "Custom HTML",
+                    "options": {
+                      "html_content": {
+                        "name": "Custom HTML Content",
+                        "type": "html_content",
+                        "default_value": "",
+                        "value": "<figure class=\"other-site amg-logo\">\n    <a href=\"https://www.mbusa.com/en/amg\" target=\"_blank\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 461 1025 101\"><path d=\"M159.91 462.389H78.992c-2.89 0-6.743 1.927-7.706 3.853L.964 558.72c-1.927 1.927-.963 3.853 1.927 3.853h81.881c2.89 0 5.78-1.927 7.706-3.853l70.322-92.478c.963-1.927 0-3.853-2.89-3.853zm62.615 0h-38.532c-2.89 0-5.78 1.927-7.706 3.853l-69.358 92.478c-1.927 1.927-.963 3.853 1.927 3.853h38.532c2.89 0 5.78-1.927 7.706-3.853l70.322-92.478c.963-1.927 0-3.853-2.89-3.853zm53.945 0h-28.899c-2.89 0-5.78 1.927-7.706 3.853l-70.322 92.478c-1.927 1.927-.963 3.853 1.927 3.853h28.899c2.89 0 5.78-1.927 7.706-3.853l70.322-92.478c1.927-1.927.963-3.853-1.927-3.853zm50.093 0h-20.23c-2.89 0-5.78 1.927-7.706 3.853l-70.322 92.478c-1.927 1.927-.963 3.853 1.927 3.853h20.23c2.89 0 5.78-1.927 7.706-3.853l70.322-92.478c.963-1.927 0-3.853-1.927-3.853zm46.239 0h-14.45c-2.89 0-5.78 1.927-7.706 3.853l-70.322 92.478c-1.927 1.927-.963 3.853 1.927 3.853h14.45c2.89 0 5.78-1.927 7.706-3.853l70.322-92.478c1.927-1.927.963-3.853-1.927-3.853zm183.029 0h-151.24c-2.89 0-5.78 1.927-7.706 3.853l-70.322 92.478c-1.927 1.927-.963 3.853 1.927 3.853h33.716c2.89 0 5.78-1.927 7.706-3.853l11.56-14.45c1.927-1.927 4.817-3.853 7.706-3.853h129.084c2.89 0 4.817 1.927 4.817 4.817v12.523c0 2.89 1.927 4.817 4.817 4.817h26.973c2.89 0 4.817-1.927 4.817-4.817v-90.551c.963-2.89-1.927-4.817-3.853-4.817zm-36.606 50.093H409.408c-2.89 0-3.853-1.927-1.927-3.853l12.523-17.34c1.927-1.927 4.817-3.853 7.706-3.853h90.551c2.89 0 4.817 1.927 4.817 4.817v15.413c.963 2.89-.963 4.817-3.853 4.817zm274.544-50.093h-26.973c-2.89 0-6.743.963-8.67 2.89l-65.505 42.386c-1.927 1.927-5.78 1.927-7.706 0l-65.505-42.386c-2.89-.963-6.743-2.89-9.633-2.89h-26.973c-1.927 0-4.817 2.89-4.817 4.817v90.551c0 2.89 1.927 4.817 4.817 4.817h26.973c2.89 0 4.817-1.927 4.817-4.817v-51.056c0-2.89 1.927-3.853 3.853-1.927l51.056 29.863c1.927.963 6.743 2.89 8.67 2.89h19.266c2.89 0 6.743-.963 8.67-2.89l51.056-29.863c1.927-.963 3.853 0 3.853 1.927v51.056c0 2.89 1.927 4.817 4.817 4.817h26.973c2.89 0 4.817-1.927 4.817-4.817v-90.551c.963-2.89-.963-4.817-3.853-4.817zm64.541 26.01h160.873c2.89 0 4.817-1.927 4.817-4.817v-16.376c0-2.89-1.927-4.817-4.817-4.817H821.704c-2.89 0-4.817 1.927-4.817 4.817v90.551c0 2.89 1.927 4.817 4.817 4.817h197.479c2.89 0 4.817-1.927 4.817-4.817v-50.092c0-2.89-1.927-4.817-4.817-4.817h-97.294c-2.89 0-4.817 1.927-4.817 4.817v9.633c0 2.89 1.927 4.817 4.817 4.817h60.689c2.89 0 4.817 1.927 4.817 4.817v4.817c0 2.89-1.927 4.817-4.817 4.817H858.311c-2.89 0-4.817-1.927-4.817-4.817v-38.532c0-3.853 1.927-4.817 4.817-4.817z\"/></svg>    </a>\n</figure>"
+                      },
+                      "force_lazy": {
+                        "name": "Lazy Load Images",
+                        "type": "boolean",
+                        "default_value": false,
+                        "value": false
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionId": "section_8",
+        "htmlId": "",
+        "htmlClasses": "sub-footer",
+        "contentWidth": "wide",
+        "backgroundColor": "#fbfbfb",
+        "backgroundImage": "",
+        "textColor": "dark",
+        "display": "normal",
+        "rows": [
+          {
+            "rowId": "row_1",
+            "rowLayout": "3_9",
+            "htmlId": null,
+            "htmlClasses": null,
+            "columns": [
+              {
+                "columnId": "column_2",
+                "columnWidth": 3,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_12",
+                    "moduleType": "custom_html",
+                    "title": "Custom HTML",
+                    "options": {
+                      "html_content": {
+                        "name": "Custom HTML Content",
+                        "type": "html_content",
+                        "default_value": "",
+                        "value": "<p>&copy;2021 Mercedes-Benz USA, LLC</p>"
+                      },
+                      "force_lazy": {
+                        "name": "Lazy Load Images",
+                        "type": "boolean",
+                        "default_value": false,
+                        "value": false
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "powered-mercedes",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_3",
+                "columnWidth": 9,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_18",
+                    "moduleType": "links_list",
+                    "title": "Links List",
+                    "options": {
+                      "links": {
+                        "name": "Links",
+                        "type": "object",
+                        "default_value": [],
+                        "value": [
+                          {
+                            "linkId": "link_16",
+                            "text": "Privacy and Other Legal Notices",
+                            "url": "https://www.mbusa.com/en/legal-notices",
+                            "target": "blank",
+                            "icon": "",
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_17",
+                            "text": "Do Not Sell My Personal Information",
+                            "url": "https://privacyportal-cdn.onetrust.com/dsarwebform/a3de94cc-66c0-419e-86e7-9911a41ac2fc/a2e0f3be-5ba4-4a3c-8d2f-18b9a5c56b6a.html",
+                            "target": "blank",
+                            "icon": "",
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_18",
+                            "text": "Interest-Based Ads",
+                            "url": "https://www.mbusa.com/en/legal-notices/privacy-statement",
+                            "target": "blank",
+                            "icon": "",
+                            "type": "direct"
+                          }
+                        ]
+                      },
+                      "links_title": {
+                        "name": "List Title",
+                        "type": "string",
+                        "default_value": null,
+                        "value": ""
+                      },
+                      "links_title_url": {
+                        "name": "List Title Link",
+                        "type": "string",
+                        "default_value": null,
+                        "value": ""
+                      },
+                      "header_tag": {
+                        "name": "Header Tag",
+                        "type": "string",
+                        "default_value": "strong",
+                        "value": "strong",
+                        "values": [
+                          {
+                            "id": "strong",
+                            "label": "STRONG"
+                          },
+                          {
+                            "id": "h3",
+                            "label": "H3"
+                          }
+                        ]
+                      },
+                      "links_display": {
+                        "name": "List Display",
+                        "type": "string",
+                        "default_value": "block",
+                        "value": "inline",
+                        "values": [
+                          {
+                            "id": "inline",
+                            "label": "Inline"
+                          },
+                          {
+                            "id": "block",
+                            "label": "Block"
+                          },
+                          {
+                            "id": "dropdown",
+                            "label": "Drop Down"
+                          }
+                        ]
+                      },
+                      "list_style": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "footer",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "No Style"
+                          },
+                          {
+                            "id": "footer",
+                            "label": "Footer"
+                          },
+                          {
+                            "id": "header",
+                            "label": "Header"
+                          },
+                          {
+                            "id": "navigation",
+                            "label": "Navigation Bar"
+                          },
+                          {
+                            "id": "menu",
+                            "label": "Menu Bar"
+                          }
+                        ]
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "sub-footer-links",
+                    "minColumnWidth": 0,
+                    "customAdmin": true,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  },
+                  {
+                    "moduleId": "module_53",
+                    "moduleType": "powered_by_rp",
+                    "title": "Powered By RP",
+                    "options": {
+                      "rp_logo": {
+                        "name": "RP Logo Color",
+                        "type": "select",
+                        "default_value": "red",
+                        "value": "grey",
+                        "possible_values": [
+                          {
+                            "value": "red",
+                            "label": "Red"
+                          },
+                          {
+                            "value": "grey",
+                            "label": "Grey"
+                          },
+                          {
+                            "value": "none",
+                            "label": "None"
+                          }
+                        ]
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "powered-by",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionId": "section_1",
+        "htmlId": "",
+        "htmlClasses": "d-none",
+        "contentWidth": "normal",
+        "backgroundColor": "",
+        "backgroundImage": "",
+        "textColor": "dark",
+        "display": "normal",
+        "rows": [
+          {
+            "rowId": "row_3",
+            "rowLayout": "13rd_23rd_split3",
+            "htmlId": null,
+            "htmlClasses": null,
+            "columns": [
+              {
+                "columnId": "column_4",
+                "columnWidth": 12,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "left",
+                "modules": [
+                  {
+                    "moduleId": "module_4",
+                    "moduleType": "newsletter_signup",
+                    "title": "Newsletter Signup",
+                    "options": {
+                      "newsletter_title": {
+                        "name": "Title",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "Newsletter Signup"
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_5",
+                "columnWidth": 4,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "left",
+                "modules": [
+                  {
+                    "moduleId": "module_1",
+                    "moduleType": "links_list",
+                    "title": "Navigation",
+                    "options": {
+                      "links": {
+                        "name": "Links",
+                        "type": "object",
+                        "default_value": [],
+                        "value": [
+                          {
+                            "linkId": "link_7",
+                            "text": "About Us",
+                            "url": "about",
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_8",
+                            "text": "Sitemap",
+                            "url": "sitemap",
+                            "type": "direct"
+                          }
+                        ]
+                      },
+                      "links_title": {
+                        "name": "List Title",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "Navigation"
+                      },
+                      "links_display": {
+                        "name": "List Display",
+                        "type": "string",
+                        "default_value": "block",
+                        "value": "block",
+                        "values": [
+                          {
+                            "id": "inline",
+                            "label": "Inline"
+                          },
+                          {
+                            "id": "block",
+                            "label": "Block"
+                          },
+                          {
+                            "id": "dropdown",
+                            "label": "Drop Down"
+                          }
+                        ]
+                      },
+                      "list_style": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "footer",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "No Style"
+                          },
+                          {
+                            "id": "footer",
+                            "label": "Footer"
+                          },
+                          {
+                            "id": "header",
+                            "label": "Header"
+                          },
+                          {
+                            "id": "navigation",
+                            "label": "Navigation Bar"
+                          },
+                          {
+                            "id": "menu",
+                            "label": "Menu Bar"
+                          }
+                        ]
+                      },
+                      "links_title_url": {
+                        "name": "List Title Link",
+                        "type": "string",
+                        "default_value": null,
+                        "value": null
+                      },
+                      "header_tag": {
+                        "name": "Header Tag",
+                        "type": "string",
+                        "default_value": "strong",
+                        "value": "strong",
+                        "values": [
+                          {
+                            "id": "strong",
+                            "label": "STRONG"
+                          },
+                          {
+                            "id": "h3",
+                            "label": "H3"
+                          }
+                        ]
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": true,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_6",
+                "columnWidth": 4,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "left",
+                "modules": [
+                  {
+                    "moduleId": "module_9",
+                    "moduleType": "links_list",
+                    "title": "Policies",
+                    "options": {
+                      "links": {
+                        "name": "Links",
+                        "type": "object",
+                        "default_value": [],
+                        "value": [
+                          {
+                            "linkId": "link_10",
+                            "text": "Terms & Conditions",
+                            "url": "policies/terms-and-conditions",
+                            "target": null,
+                            "icon": null,
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_11",
+                            "text": "Returns",
+                            "url": "policies/returns",
+                            "target": null,
+                            "icon": null,
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_12",
+                            "text": "Shipping",
+                            "url": "policies/shipping",
+                            "target": null,
+                            "icon": null,
+                            "type": "direct"
+                          },
+                          {
+                            "linkId": "link_13",
+                            "text": "Privacy",
+                            "url": "https://www.mbusa.com/en/legal-notices",
+                            "target": "",
+                            "icon": "",
+                            "type": "direct"
+                          }
+                        ]
+                      },
+                      "links_title": {
+                        "name": "List Title",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "Policies"
+                      },
+                      "links_display": {
+                        "name": "List Display",
+                        "type": "string",
+                        "default_value": "block",
+                        "value": "block",
+                        "values": [
+                          {
+                            "id": "inline",
+                            "label": "Inline"
+                          },
+                          {
+                            "id": "block",
+                            "label": "Block"
+                          },
+                          {
+                            "id": "dropdown",
+                            "label": "Drop Down"
+                          }
+                        ]
+                      },
+                      "list_style": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "footer",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "No Style"
+                          },
+                          {
+                            "id": "footer",
+                            "label": "Footer"
+                          },
+                          {
+                            "id": "header",
+                            "label": "Header"
+                          },
+                          {
+                            "id": "navigation",
+                            "label": "Navigation Bar"
+                          },
+                          {
+                            "id": "menu",
+                            "label": "Menu Bar"
+                          }
+                        ]
+                      },
+                      "links_title_url": {
+                        "name": "List Title Link",
+                        "type": "string",
+                        "default_value": null,
+                        "value": ""
+                      },
+                      "header_tag": {
+                        "name": "Header Tag",
+                        "type": "string",
+                        "default_value": "strong",
+                        "value": "strong",
+                        "values": [
+                          {
+                            "id": "strong",
+                            "label": "STRONG"
+                          },
+                          {
+                            "id": "h3",
+                            "label": "H3"
+                          }
+                        ]
+                      },
+                      "links_image": {
+                        "name": "List Image",
+                        "type": "image_upload",
+                        "default_value": null,
+                        "value": ""
+                      },
+                      "links_stock": {
+                        "name": "List Style",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "none",
+                        "values": [
+                          {
+                            "id": "none",
+                            "label": "None"
+                          },
+                          {
+                            "id": "mobile_menu",
+                            "label": "Mobile Menu"
+                          },
+                          {
+                            "id": "policies",
+                            "label": "Policies"
+                          }
+                        ]
+                      },
+                      "footer_link": {
+                        "name": "Footer Link",
+                        "type": "string",
+                        "default_value": null,
+                        "value": ""
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": true,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_7",
+                "columnWidth": 4,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "left",
+                "modules": [
+                  {
+                    "moduleId": "module_3",
+                    "moduleType": "payments_accepted",
+                    "title": "Payments Accepted",
+                    "options": {
+                      "payments_title": {
+                        "name": "Title",
+                        "type": "string",
+                        "default_value": null,
+                        "value": "Payments Accepted"
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionId": "section_27",
+        "htmlId": "",
+        "htmlClasses": "use-padding d-none",
+        "contentWidth": "normal",
+        "backgroundColor": "#f4f4f4",
+        "backgroundImage": "",
+        "textColor": "dark",
+        "display": "normal",
+        "rows": [
+          {
+            "rowId": "row_32",
+            "rowLayout": "6_6",
+            "htmlId": null,
+            "htmlClasses": null,
+            "columns": [
+              {
+                "columnId": "column_33",
+                "columnWidth": 6,
+                "htmlId": "",
+                "htmlClasses": "",
+                "moduleArrangement": "inline",
+                "textAlignment": "left",
+                "modules": [
+                  {
+                    "moduleId": "module_2",
+                    "moduleType": "account_login_message",
+                    "title": "Account Login Message",
+                    "options": {
+                      "use_simplified_layout": {
+                        "name": "Use Simplified Format",
+                        "type": "boolean",
+                        "default_value": false,
+                        "value": false
+                      }
+                    },
+                    "htmlId": null,
+                    "htmlClasses": null,
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_34",
+                "columnWidth": 6,
+                "htmlId": "",
+                "htmlClasses": "text-right",
+                "moduleArrangement": "inline",
+                "textAlignment": "left",
+                "modules": [
+                  {
+                    "moduleId": "module_10",
+                    "moduleType": "powered_by_rp",
+                    "title": "Powered By RP",
+                    "options": {
+                      "rp_logo": {
+                        "name": "RP Logo Color",
+                        "type": "select",
+                        "default_value": "red",
+                        "value": "grey",
+                        "possible_values": [
+                          {
+                            "value": "red",
+                            "label": "Red"
+                          },
+                          {
+                            "value": "grey",
+                            "label": "Grey"
+                          },
+                          {
+                            "value": "none",
+                            "label": "None"
+                          }
+                        ]
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

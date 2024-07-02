@@ -1,0 +1,198 @@
+{
+    "pageId": "cart",
+    "pageName": "Cart Page",
+    "pageType": null,
+    "layoutEnabled": true,
+    "moduleCategories": [
+      "header",
+      "images",
+      "text",
+      "search",
+      "categories_products",
+      "forms",
+      "navigation",
+      "footer",
+      "cart_page"
+    ],
+    "VFSPath": "layouts/cart.json",
+    "requiredModules": [
+      "cart_checkout",
+      "cart_subtotal",
+      "cart_listing"
+    ],
+    "scripts": "",
+    "sections": [
+      {
+        "sectionId": "section_1",
+        "htmlId": "",
+        "htmlClasses": "",
+        "contentWidth": "wide",
+        "backgroundColor": "",
+        "backgroundImage": "",
+        "textColor": "dark",
+        "display": "normal",
+        "rows": [
+          {
+            "rowId": "row_2",
+            "rowLayout": 12,
+            "htmlId": null,
+            "htmlClasses": null,
+            "columns": [
+              {
+                "columnId": "column_3",
+                "columnWidth": 12,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "left",
+                "modules": [
+                  {
+                    "moduleId": "module_1",
+                    "moduleType": "page_title",
+                    "title": "Title",
+                    "options": {},
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 12,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "rowId": "row_3",
+            "rowLayout": 12,
+            "htmlId": null,
+            "htmlClasses": null,
+            "columns": [
+              {
+                "columnId": "column_4",
+                "columnWidth": 12,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "left",
+                "modules": [
+                  {
+                    "moduleId": "module_5",
+                    "moduleType": "cart_checkout",
+                    "title": "Checkout (Top)",
+                    "options": {},
+                    "htmlId": "",
+                    "htmlClasses": "cart-button-top",
+                    "minColumnWidth": 12,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  },
+                  {
+                    "moduleId": "module_6",
+                    "moduleType": "cart_listing",
+                    "title": "Cart Listing",
+                    "options": {},
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 12,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "rowId": "row_6",
+            "rowLayout": "8_4",
+            "htmlId": "",
+            "htmlClasses": "cart-subtotal-row",
+            "columns": [
+              {
+                "columnId": "column_7",
+                "columnWidth": 8,
+                "htmlId": null,
+                "htmlClasses": null,
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_2",
+                    "moduleType": "collect_vin_form",
+                    "title": "Collect VIN Form",
+                    "options": {
+                      "vin_message": {
+                        "name": "VIN Message",
+                        "type": "html_content",
+                        "default_value": "<p>Make sure your parts fit your vehicle. Provide your VIN and we will confirm fitment for you.</p>",
+                        "value": "<p>Make sure your parts fit your vehicle. Provide your VIN and we will confirm fitment for you.</p>"
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              },
+              {
+                "columnId": "column_8",
+                "columnWidth": 4,
+                "htmlId": "",
+                "htmlClasses": "",
+                "moduleArrangement": "block",
+                "textAlignment": "text-left",
+                "modules": [
+                  {
+                    "moduleId": "module_3",
+                    "moduleType": "cart_subtotal",
+                    "title": "Cart Subtotal Box",
+                    "options": {},
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  },
+                  {
+                    "moduleId": "module_29",
+                    "moduleType": "payments_messaging",
+                    "title": "Payments Messaging",
+                    "options": {
+                      "style": {
+                        "name": "Banner Style",
+                        "type": "select",
+                        "possible_values": [
+                          {
+                            "value": "bannerview",
+                            "label": "Banner View"
+                          },
+                          {
+                            "value": "productview",
+                            "label": "Product View"
+                          }
+                        ],
+                        "default_value": "productview",
+                        "value": "productview"
+                      }
+                    },
+                    "htmlId": "",
+                    "htmlClasses": "",
+                    "minColumnWidth": 0,
+                    "customAdmin": false,
+                    "modulePadding": "padding-0",
+                    "display": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
