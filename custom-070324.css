@@ -1,0 +1,2755 @@
+/** General **/
+
+@font-face {
+    font-family: 'corporateacondpro';
+    src: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/corporateacondpro_regular_webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'corporateacondproitalic';
+    src: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/corporateacondpro_regularitalic_webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CorporateA-Regular';
+    src: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/corpos_regular_webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArialTh';
+    src: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/ArialTh.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MbusaIcons';
+    src: url('https://rparts-sites.s3.amazonaws.com/359c02fc5625393b6a1197938ab8f0b1/design/mbusa-icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+/* Really this should be bundled with mbusa-icons but it was not made by MB, and I couldn't find a straightforward way to add it into the
+   existing ttf, so I added another one. This is a potential small future optimization so that we do one fewer request. */
+@font-face {
+    font-family: 'MbusaShoppingCart';
+    src: url('https://rparts-sites.s3.amazonaws.com/359c02fc5625393b6a1197938ab8f0b1/design/mb-shopping-cart.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+/**@font-face {
+    font-family: 'Open Sans';
+    font-display: fallback;
+    src: url('//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Semibold-webfont.eot');
+    src: url('//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}**/
+
+form,
+input,
+label,
+select {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body,
+input,
+label,
+select,
+input::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input,
+label,
+select {
+    color: #010101
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #010101;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'corporateacondpro';
+    color: #404040;
+}
+
+.form-fields .fieldset-title,
+.page-subheader-component h1,
+.page-subheader-component h2 {
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    font-family: 'corporateacondpro';
+    color: #010101;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #176db7;
+    border-color: #176db7;
+    color: #fff;
+}
+
+button:focus,
+.btn:focus {
+    outline: none;
+}
+
+a {
+    color: #176db7;
+}
+
+a:hover {
+    color: #0090ff;
+}
+
+p {
+    font-size: 12px;
+    line-height: 2;
+}
+
+.call-to-action-button:focus,
+.call-to-action-button:hover,
+.search-by-vin-module .btn:hover,
+.social-links-module .social-bg:hover,
+html body .action-button.place-order-button:hover,
+.call-to-action-module .cta-button .call-to-action-button:hover {
+    background-color: #0090ff;
+}
+
+.search-by-vin-module .btn {
+    text-transform: capitalize;
+}
+
+.search-bar-component input:focus,
+.search-by-vin-module input[type=text]:focus,
+.subscribe-email:focus,
+.dealer-selection-modal .zip-input:focus,
+.vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown .dropdown-toggle:focus,
+button.drop-menu:focus {
+    outline: none;
+}
+
+.page-builder-page-layout .page-builder-layout-section.select-your-vehicle-header-section .container-wrap.container-fluid {
+    padding-bottom: 0;
+}
+
+.page-builder-page-layout .page-builder-layout-section.search-vehicle-section .container-wrap.container-fluid {
+    padding-top: 20px;
+}
+
+.page-builder-page-layout .page-builder-layout-section. .container-wrap.container-fluid {
+    padding-top: 20px;
+}
+
+.form-fields .field.block-field input,
+.form-fields .field.block-field input::placeholder,
+.search-bar-component input,
+.search-bar-component input::placeholder,
+.vehicle-picker-dropdown-module .vehicle-picker-dropdown.inline .dropdown .dropdown-toggle,
+.search-vehicle-section .search-by-vin-module input[type=text],
+.search-vehicle-section .search-by-vin-module input[type=text]::placeholder {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.vehicle-picker-dropdown-module .header-text,
+.search-vehicle-section .search-or {
+    font-weight: 500;
+    font-family: 'corporateacondpro';
+    color: #222222;
+    font-size: 20px;
+}
+
+.cart-component .cart-button .cart-items {
+    left: -20px;
+    bottom: -7px;
+    top: auto;
+    background: #176db7;
+    color: #fff;
+    padding: 1.5px 4px;
+}
+
+.top-header .page-builder-layout-column-wrap,
+.main-header .container-wrap,
+.search-vehicle-section .page-builder-layout-column-wrap,
+.search-vehicle-section .search-vin .search_form,
+.search-vehicle-section .vehicle-picker-dropdown-module,
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown,
+.vehicle-models-section .model-row,
+.main-header .main-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.vehicle-models-section .model-row {
+    justify-content: center;
+}
+
+.top-header .page-builder-layout-column-wrap {
+    justify-content: flex-end;
+}
+
+.container-header .call-to-action-button,
+.container-header #action_account .your-account {
+    background: transparent;
+}
+
+.container-header .car-selected-module .fa,
+.container-header  #action_account .fa,
+.container-header #action_account .design-text,
+.container-header .cart-component .cart-button .fa,
+.search-vehicle-section .search-by-vin-module .header-text,
+.search-vehicle-section .box-icon,
+.search-vehicle-section .box-message,
+.search-vehicle-section .search-by-vin-module .find-vin-link,
+.featured-product-section .featured-products-module .product-wrapper-link .product-details-link .fa {
+    display: none;
+}
+
+.container-header .cart-component,
+.container-header #action_account,
+.container-header .call-to-action-button{
+    min-width: auto;
+    width: auto;
+    padding: 0;
+}
+
+.container-header .find-dealer-button {
+    margin-top: 0;
+}
+
+.container-header .find-dealer-button {
+    font-size: inherit;
+}
+
+.vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown-menu .search-wrapper input {
+    padding: .25rem .5rem;
+}
+
+.vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown-menu ul li .dropdown-item {
+    padding: .375rem .5rem;
+}
+
+.container-header .find-dealer-button .find-dealer-text,
+.container-header .car-selected-module .garage-text,
+.container-header #action_account .your-account,
+.container-header .cart-component .cart-button {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: none;
+    padding: 5px 10px 5px 35px;
+    margin-left: 20px;
+    background-size: 25px !important;
+    color: #ffffff;
+}
+
+.container-header .cart-component .cart-button .cart-text {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: none;
+}
+
+.container-header .find-dealer-button .find-dealer-text:hover,
+.container-header .car-selected-module .garage-text:hover,
+.container-header #action_account .your-account:hover,
+.container-header .mobile-view .your-account:hover,
+.container-header .cart-component .cart-button:hover * {
+    color: #0090ff;
+    text-decoration: none;
+}
+
+.container-header .cart-component .cart-button:hover .cart-items {
+    background-color: #fff;
+}
+
+.container-header .cart-component .cart-flyout .upper-arrow {
+    right: 15px;
+    left: auto;
+}
+
+.container-header .flyout {
+    top: 30px;
+}
+
+.container-header .car-selected-module .garage-text {
+    padding-left: 0;
+}
+
+.container-header .car-selected-module .garage-text::before {
+    content: "\e914";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    font: normal normal normal 15px/1px MbusaIcons;
+    padding-right: 5px;
+    position: relative;
+    top: -1px;
+}
+
+.container-header #action_account .your-account {
+    padding-left: 0;
+}
+
+/* cf - sb */
+/*.container-header #action_account .your-account::before {*/
+.container-header #action_account .your-account::before, .container-header .custom-html-module .your-account::before {
+    content: "\e944";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    font: normal normal normal 28px/1px MbusaIcons;
+    position: relative;
+    top: -1px;
+    padding-right: 5px;
+}
+
+.container-header .cart-component .cart-button {
+    padding-left: 0;
+}
+
+.container-header .cart-component .cart-button .cart-wrapper::before {
+    content: "\41";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    font: normal normal normal 22px/1px MbusaShoppingCart;
+    position: relative;
+    top: -1px;
+    padding-right: 5px;
+}
+
+.container-header .find-dealer-button .find-dealer-text::before {
+    content: "\e90a";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    font: normal normal normal 20px/1px MbusaIcons;
+    padding-right: 6px;
+    position: relative;
+    top: -2px;
+}
+
+.container-header .main-header .row-logo {
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    max-width: 60px;
+    margin-top: -15px;
+}
+
+.container-header .main-header .row-search {
+    -ms-flex: 0 0 29%;
+    flex: 0 0 29%;
+    max-width: 29%;
+    margin-top: -25px !important;
+}
+
+.container-header .main-header .row-menu .block-modules {
+    position: static;
+    position: unset;
+}
+
+.main-header .container-wrap {
+    position: relative;
+}
+
+.container-header .main-header .row-menu,
+.search-vehicle-section .search-vehicle,
+.search-vehicle-section .search-by-vin-module input[type=text],
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown,
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown{
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.container-header .page-builder-page-layout .page-builder-layout-row+.page-builder-layout-row {
+    margin-top: 0;
+}
+
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown {
+    margin-left: 16px;
+}
+
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.year-dropdown,
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.model-dropdown,
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.trim-dropdown,
+.main-header .main-list > li {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+.search-vehicle-section .search-vehicle .vehicle-picker-dropdown-module .btn,
+.search-vehicle-section .search-by-vin-module input[type=text],
+.search-vehicle-section .search-by-vin-module input[type=text]::placeholder {
+    color: #444444;
+}
+
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown .dropdown-toggle {
+    width: 100%;
+    max-width: 100%;
+    min-width: auto;
+    padding: 10px 0;
+}
+
+.search-vehicle-section .search-by-vin-module input[type=text] {
+    padding: 10px 0;
+}
+
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.year-dropdown .dropdown-toggle {
+    min-width: 84px;
+}
+
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.model-dropdown .dropdown-toggle {
+    min-width: 164px;
+}
+
+.search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.trim-dropdown .dropdown-toggle {
+    min-width: 138px;
+}
+
+.search-bar-component input:focus {
+    border: none;
+    border-radius: 0;
+}
+/**
+.container-header .col-search .search-bar-component .search-box {
+    border-bottom: 1px solid #fff;
+}
+**/
+
+.container-header .col-search .search-bar-component input {
+    background: transparent;
+    padding-left: 30px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 1020px) {
+    .container-header .col-search .search-bar-component input::placeholder {
+    	font-size: 12px;
+    }
+}
+
+.container-header .col-search .search-bar-component button {
+    left: 0;
+    right: auto;
+}
+
+.search-bar-component input,
+.search-bar-component input::placeholder {
+    color: #fff;
+}
+
+.search-bar-component input:focus::placeholder {
+    color: rgb(255 255 255 / .5);
+}
+
+/*
+.search-bar-component input:focus::-webkit-input-placeholder,
+.search-bar-component input:focus:-moz-placeholder,
+.search-bar-component input:-moz-placeholder,
+.search-bar-component input:focus::-moz-placeholder,
+.search-bar-component input:-ms-input-placeholder,
+.search-bar-component input:focus:-ms-input-placeholder {
+    color: rgb(255 255 255 / .5);
+}*/
+
+.container-header .col-search .search-bar-component input:active,
+.container-header .col-search .search-bar-component input:focus {
+    border-color: #0090ff;
+}
+
+.main-header .store-logo-module .store-logo-link img {
+    max-width: 40px;
+    margin: 0;
+}
+
+.col-menu ul {
+    list-style: none;
+    margin: 0;
+}
+
+.main-list .nav-link {
+    padding: 7px 12px;
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main-list .nav-title {
+    font-weight: 400;
+    padding: 7px 12px;
+    color: #000;
+    margin: 0;
+}
+
+.main-list .nav-header {
+    font-family: Arial, sans-serif;
+    padding: 7px 12px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    font-size: 14px;
+}
+
+.mega-menu .nav-link {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.main-list > .nav-item > .nav-link {
+    padding: 25px 8px 40px;
+    border-bottom: 3px solid #000;
+}
+
+@media screen and (max-width: 1118px) {
+    .main-list > .nav-item > .nav-link {
+    	padding: 25px 5px 40px;
+    }
+}
+
+.main-list > .nav-item:hover > .nav-link,
+.main-list > .nav-item:hover > .drop-menu {
+    border-bottom-color: #0090ff !important;
+}
+
+.main-list .nav-item:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.banner-vpicker-module .owl-dots {
+    width: 180px;
+}
+
+.banner-vpicker-module .banner-vpicker-slider .banner-fill-contain {
+    height: 100%;
+}
+
+.banner-vpicker-module .banner-vpicker-slider .banner-fill-contain {
+    height: 100% !important;
+}
+
+.main-list .nav-link:hover,
+.top-accessories-section ul li a:hover,
+.featured-product-section .featured-products-module .product-wrapper-link:hover,
+.featured-product-section .featured-products-module .product-wrapper-link:hover .product-details-link,
+.featured-product-section .featured-products-module .featured-product .product-wrapper-link:hover .details-display .product-title {
+    color: #0090ff;
+}
+
+.search-vehicle .vehicle-picker-dropdown-module .btn,
+.search-vehicle-section .search-by-vin-module input[type=text]{
+    border: none;
+    border-bottom: 1px solid #979797;
+    background: transparent !important;
+    border-radius: 0;
+}
+
+.search-vehicle-section .search-or {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 !important;
+}
+
+.search-vehicle-section .search-vin {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin: 0;
+}
+
+.search-vehicle .vehicle-picker-dropdown-module,
+.search-vehicle-section .search-by-vin-module input[type=text],
+.search-by-vin-module .btn,
+.search-vehicle-section .search-vehicle,
+.search-vehicle-section .search-vin,
+.search-vehicle-section .search-or p,
+.search-vehicle-section .vehicle-picker-dropdown-module .header-text {
+    margin: 0 !important;
+}
+
+.search-vehicle-section .vehicle-picker-dropdown-module .header-text {
+    margin-right: 10px !important;
+}
+
+.search-by-vin-module .btn  {
+    -ms-flex: 0 0 80px;
+    flex: 0 0 80px;
+    max-width: 80px;
+    margin-left: 20px !important;
+}
+
+.top-accessories-section .links-list-module .links-list,
+.main-footer .links-list-module .links-list,
+.featured-product-section .links-list-module .links-list {
+    display: block !important;
+    width: 100%;
+}
+
+.vehicle-models-section .model {
+    -ms-flex: 0 0 11.11%;
+    flex: 0 0 11.11%;
+    max-width: 11.11%;
+    text-align: center;
+}
+
+.vehicle-models-section .model a {
+    text-align: center;
+    color: #010101;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin: 10px 0;
+}
+
+.vehicle-models-section .model .model-img {
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.top-accessories-section ul li {
+    border-bottom: 1px #000 dotted;
+    padding: 6px 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #010101;
+}
+
+.top-accessories-section ul li:not(:last-child) a {
+    color: #010101;
+}
+
+.top-accessories-section ul li:last-child a {
+    color: #176db7;
+}
+
+.top-accessories-section ul li a:hover,
+.top-accessories-section ul li a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #0090ff;
+}
+
+.featured-product-section ul li {
+    padding: 2px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.featured-product-section .featured-products-module .product-wrapper-link {
+    padding: 0;
+    border: none;
+    border-bottom: none;
+    height: auto;
+}
+
+.featured-product-section .featured-products-module .featured-product .details-display {
+    min-height: auto;
+}
+
+.featured-product-section .featured-products-module .featured-products .featured-product .image-display .image-wrapper {
+    height: auto;
+}
+
+.featured-product-section  .featured-products-module .featured-products .featured-product .image-display .image-wrapper img {
+    max-height: 100%;
+}
+
+.featured-product-section .featured-products {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.featured-product-section .featured-products-module .featured-products .featured-product {
+    margin-right: 0;
+    width: 33.33%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.featured-product-section .featured-products-module .featured-product .details-display .details-partnum {
+    display: none;
+}
+
+.featured-product-section .featured-products-module .featured-product .details-display .details-title {
+    min-height: auto;
+    margin: 15px 0;
+}
+
+.featured-product-section .featured-products-module .featured-product .pricing-actions-display .product-pricing .product-sale-price,
+.featured-product-section .featured-products-module .product-wrapper-link .product-details-link {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.featured-product-section .featured-products-module .product-wrapper-link .product-details-link {
+    position: relative;
+    height: auto;
+    top: auto;
+    background: transparent;
+    text-align: left;
+    color: #176db7;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.featured-product-section .featured-products-module .product-wrapper-link .product-details-link:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.featured-product-section .featured-products-module .featured-product .details-display .product-title {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'corporateacondpro';
+    color: #404040;
+}
+
+.featured-product-section .featured-products-module h2,
+.vehicle-models-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.featured-product-section .featured-products-module .featured-product .image-display .product-image.lazy-load {
+    position: relative;
+}
+
+.featured-product-section .featured-products-module .featured-product .image-display .product-image.placeholder {
+    position: absolute;
+    top: 0;
+}
+
+.top-accessories-section ul li:last-child {
+    border-bottom: none;
+    margin: 5px 0;
+}
+
+.customer-support .call-to-action-module .cta-content {
+    font-size: 12px;
+    max-width: 420px;
+    margin: auto;
+}
+
+.customer-support .call-to-action-module .cta-content strong {
+    font-size: 16px;
+}
+
+
+.d-none {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-footer {
+    padding: 70px 0;
+}
+
+.main-footer .heading {
+    border-bottom: 1px #000 dotted;
+    padding-bottom: 5px;
+    font-size: 24px;
+    color: #222;
+    font-weight: 400;
+}
+
+.main-footer .links-list-module a {
+    padding: 6px 0;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.container-footer .main-footer a{
+    color: #222;
+}
+
+.container-footer .main-footer .nav_social a {
+    color: #010101;
+}
+
+.container-footer .main-footer .nav_social a:hover {
+    color: #0090ff;
+}
+
+.other-site a:hover svg {
+    fill: #0090ff;
+}
+
+.page-builder-page-layout .mercedes-benz-sites,
+.page-builder-page-layout .newsletters-section {
+    margin-top: 0 !important;
+}
+
+.mercedes-benz-sites svg {
+    max-height: 20px;
+}
+
+.mercedes-benz-sites .amg-logo svg {
+    max-height: 12px;
+}
+
+.mercedes-benz-sites .smart-logo {
+    width: 80px;
+}
+.mercedes-benz-sites .amg-logo {
+    width: 90px;
+}
+
+.mercedes-benz-sites figure {
+    margin-bottom: 0;
+}
+
+.mercedes-benz-sites .page-builder-layout-column {
+    margin-bottom: 10px;
+}
+
+.main-footer .social-links-module .nav_social {
+    text-align: right;
+    margin: 30px 0 0;
+}
+
+.call-to-action-module .cta-button .call-to-action-button {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 15px!important;
+}
+
+.modal-content .dealer-confirmation-footer .call-to-action-button {
+    border: none;
+    padding: .5rem .75rem;
+}
+
+.call-to-action-button, .dealer-confirmation-footer .call-to-action-button,
+.call-to-action-module .cta-button .call-to-action-button {
+    background-color: #176db7;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.main-footer .subscribe-email {
+    background: transparent;
+    border: none;
+    padding: 7px 0 !important;
+    line-height: 1.3;
+    border-bottom: 1px solid #757575;
+}
+
+.main-footer .subscribe-email,
+.main-footer .subscribe-email::placeholder {
+    color: #666;
+    font-size: 14px;
+    /*font-family: Arial, sans-serif;*/
+}
+
+.social-links-module .layout-inline li+li {
+    margin-left: 15px;
+}
+
+.social-links-module .social-bg {
+    background-color: #010101;
+}
+
+.sub-footer .links-list-module .links-list li,
+.sub-footer .custom-html-module p,
+.sub-footer .links-list-module.list-style-footer .links-list {
+    margin: 0;
+}
+
+.sub-footer .links-list-module.list-style-footer .links-list a {
+    font-size: 11px;
+}
+
+.sub-footer .links-list-module.list-style-footer .links-list a:hover {
+    color: #0090ff;
+}
+
+.newsletter-signup-module .newsletter-main-text {
+    font-size: 12px !important;
+    font-weight: 500;
+    color: #222 !important;
+    font-family: 'Arial', sans-serif !important;
+}
+
+.newsletter-signup-module .call-to-action-button {
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    background-color: #444;
+}
+
+.newsletter-signup-module.newsletter-inline .input-custom .newsletter-button {
+    font-family: 'Arial', sans-serif;
+}
+
+.newsletter-signup-module .call-to-action-button:hover {
+    background-color: #999;
+}
+
+.quality-craft .quality-craft-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 100%;
+    margin-left: 25px;
+}
+
+.sub-footer p,
+.sub-footer a {
+    color: #666;
+    font: normal 400 11px/2.18182 "Arial",sans-serif;
+}
+
+.sub-footer a:hover,
+.sub-footer a:focus,
+.vehicle-models-section .model a:hover,
+.container-footer .main-footer a:hover,
+.container-footer .main-footer a:focus {
+    color: #0090ff !important;
+    text-decoration: none;
+    outline: none;
+}
+
+.powered-by,
+.sub-footer-links {
+    display: inline-block;
+}
+
+.sub-footer-links {
+    margin-top: 0 !important;
+}
+
+#page-account-profile .account-profile-form-fields input[type=password],
+#page-account-profile .account-profile-form-fields input[type=text],
+#page-account-profile .account-profile-form-fields select,
+#page-account-profile .account-profile-form-fields textarea,
+#page-account-profile .account-profile-form-fields form .field.required .field-value,
+#page-login-create .floating-label-form .field input,
+#page-contact .contact-form-module .contact-form-fields .select2-selection--single,
+#page-contact .contact-form-module .contact-form-fields input,
+#page-contact .contact-form-module .contact-form-fields select,
+#page-contact .contact-form-module .contact-form-fields textarea,
+#page-contact .contact-form-module .contact-form-fields .dropdown-toggle {
+    border: none !important;
+    width: 100%;
+    max-width: 580px;
+    border-bottom: 1px solid #979797 !important;
+    border-radius: 0 !important;
+    color: #555555;
+    padding: 8px 0;
+    line-height: 1.4;
+    height: auto;
+    background: transparent;
+    font-size: 16px;
+}
+
+#page-contact .contact-form-module .contact-form-fields .dropdown-menu {
+    max-width: 580px;
+}
+
+#page-account-profile .form-fields .field .field-value {
+    display: block;
+}
+
+#page-account-profile .account-profile-form-fields .field-label,
+#page-login-create .form-fields .fieldset-title {
+    display: none;
+}
+
+#page-account-profile .account-profile-form-fields .buttons .btn,
+#page-contact .contact-form-module .call-to-action-button {
+    width: 100%;
+    border-radius: 0;
+    max-width: 580px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+#page-account-profile .account-profile-form-fields form .field.required .field-label {
+    display: block !important;
+    font-size: 14px;
+    color: #555555;
+    padding: 0;
+}
+
+#page-account-profile .account-profile-form-fields form >  *:nth-last-child(2) .fieldset-title {
+    display: none;
+}
+
+#page-account-profile .account-profile-form-fields .fieldset-title {
+    background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/user-light.png') left no-repeat;
+}
+
+#page-account-wishlist .page-subheader-component h1 {
+    background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/wishlist.png') left no-repeat;
+}
+
+#page-account-orders .page-subheader-component h1 {
+    background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/orders.png') left no-repeat;
+}
+
+#page-account-profile .account-profile-form-fields .fieldset-title,
+#page-account-orders .page-subheader-component h1,
+#page-account-wishlist .page-subheader-component h1 {
+    background-size: contain !important;
+    padding: 6px 0 6px 50px;
+}
+
+#page-login-create .floating-label-form .field.active .field-label {
+    padding-left: 0;
+    padding-top: 0;
+    top: -10px;
+    left: 0;
+}
+
+#page-login-create .login-combined-module>div {
+    padding: 0;
+}
+
+#page-login-create .login-combined-module button {
+    padding: 6px 30px;
+    border-radius: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+#page-login-create .login-combined-module {
+    min-height: 350px;
+    left: auto;
+    margin: auto;
+    min-width: 100%;
+    margin-top: 50px;
+    height: auto !important;
+}
+
+#page-login-create .login-combined-module .login-nav-link {
+    font-size: 13px;
+}
+
+#page-login-create .login-combined-module .login-user-form .form-caption {
+    font-weight: 500;
+    padding: 10px 15px 0;
+}
+
+#page-contact .contact-form-module .contact-form-fields input,
+#page-contact .contact-form-module .contact-form-fields select,
+#page-contact .contact-form-module .contact-form-fields textarea {
+    padding: 5px 0;
+}
+
+#page-contact .contact-form-module .contact-form-fields textarea {
+    margin-top: 15px;
+    border: 1px solid #979797 !important;
+    padding: 0;
+}
+
+#page-contact .contact-form-module .contact-form-fields .field .field-label {
+    display: block;
+    padding: 0;
+    width: 100%;
+    color: #555555;
+    font-size: 14px;
+    background-color: transparent;
+    color: #888;
+    cursor: text;
+    font-size: 14px;
+    font-weight: 400;
+    left: 3px;
+    opacity: 0;
+    padding-left: 2em;
+    padding-top: 1em;
+    pointer-events: none;
+    position: absolute;
+    transition: padding-top .15s,font-size .15s,color .15s,font-weight .15s,opacity .10s;
+}
+
+#page-contact .contact-form-module .contact-form-fields .field {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+#page-contact .contact-form-module .contact-form-fields .field.active .field-label {
+    color: #383838;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 1;
+    padding-left: 0;
+    padding-top: 0;
+    top: -12px;
+    left: 0;
+}
+
+#page-contact .contact-form-module .contact-form-fields input,
+#page-contact .contact-form-module .contact-form-fields select,
+#page-contact .contact-form-module .contact-form-fields textarea,
+#page-contact .contact-form-module .contact-form-fields textarea::placeholder {
+    color: #111111;
+}
+
+#page-contact .contact-form-module .contact-form-fields .field.active input::placeholder,
+#page-contact .contact-form-module .contact-form-fields .field.active textarea::placeholder {
+    opacity: 0;
+}
+
+#page-product .product-title-module {
+    padding: 0;
+}
+
+.page-title-col {
+    margin-bottom: 40px;
+}
+
+.product-page-layout .product-details-module ul.field-list li,
+.product-page-layout .product-fitment {
+    font-size: 14px;
+}
+
+.product-store-description-module h3 {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    color: #010101;
+}
+
+.dealer-selection-modal .modal-container .modal-content {
+    background-color: #ffffff;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body {
+    padding: 0px 15px 15px;
+    margin: 0;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .body-heading {
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom: none;
+    font-family: 'corporateacondpro';
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .zip-input-container {
+    display: flex;
+    max-width: 500px;
+    margin: 30px auto 50px auto;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .zip-input-container .zip-input {
+    border: 0;
+    background: transparent;
+    float: left;
+    width: calc(100% - 120px);
+    margin-right: 20px;
+    border-bottom: 1px solid #979797;
+    border-radius: 0;
+    padding: .5rem .75rem .5rem 0;
+    font-weight: 500;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection .zip-input-container .enter-zip-button {
+    font-weight: 400;
+    border: none;
+    background: #176db7;
+    border-radius: 0;
+    width: 100px;
+    padding: .5rem .75rem;
+    font-size: 14px;
+    text-transform: inherit;
+    color: #ffffff;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection-container .dealers-container .heading,
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection-container .dealers-container {
+    border: none;
+}
+
+.dealer-selection-modal .modal-container .modal-content .close-button {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection .dealer-selection-container .dealers-container .dealers-list .dealer-row .select-dealer-button {
+    font-weight: 400;
+    border: none;
+    background: #176db7;
+    border-radius: 0;
+    width: 100px;
+    padding: .5rem .75rem;
+    font-size: 14px;
+    text-transform: inherit;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection-container .dealers-container .dealers-list .dealer-row.selected i {
+    background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/checked.png') center no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    right: 32.5px;
+}
+
+.dealer-selection-modal .modal-container .modal-content .close-button button span {
+    display: none;
+}
+
+.dealer-selection-modal .modal-container .modal-content .close-button button {
+    background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/close.png') center no-repeat;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    opacity: 1;
+    z-index: 9999;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection-container .dealers-container .dealers-list .dealer-row .dealer-info,
+.dealer-selection-modal .modal-container .modal-content .modal-body .selected-dealer {
+    font-size: 12px;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection-container .dealers-container .dealers-list .dealer-row .dealer-info > *:not(:last-child),
+.dealer-selection-modal .modal-container .modal-content .modal-body .selected-dealer > *:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection-container .dealers-container .dealers-list .dealer-row .dealer-info .dealer-name,
+.dealer-selection-modal .modal-container .modal-content .modal-body .selected-dealer .name {
+    font-weight: bold;
+    font-size: 14px;
+    color: #010101;
+}
+
+.dealer-selection-modal .modal-container .modal-content .modal-body .dealer-selection-container .dealers-container .dealers-list .dealer-row.selected i:before {
+    display: none;
+}
+
+.container-header .mobile-cart-link .cart-component .cart-button .cart-text {
+    margin-left: 0;
+}
+
+.container-header .mobile-cart-link .cart-component .cart-button .cart-text,
+.container-header .mobile-cart-link .cart-component .cart-flyout {
+    display: none !important;
+}
+
+
+.container-header .mobile-cart-link .cart-component .cart-button,
+.container-header .mobile-cart-link .cart-component .cart-button .cart-wrapper::before {
+    padding-right: 0;
+}
+
+
+.mobile-toggle #button-toggle {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 30px;
+}
+
+.account-menu-module ul a {
+    color: #010101;
+    font-size: 16px;
+    padding: 8px 0px 8px 10px;
+}
+
+.page-bread-crumbs a,
+.oem-top-level-categories-module h3,
+.page-subheader-component .page-bread-crumbs .tail {
+    color: #010101;
+}
+
+.oem-sidebar-module .oem-sidebar-component.oem-sidebar-garage .garage-text a span {
+    display: none;
+}
+
+.oem-top-level-categories-module h3 {
+    font-size: 25px;
+}
+
+.page-subheader-component h1,
+.page-subheader-component h2 {
+    margin: 20px 0 0;
+}
+
+.oem-sidebar-module .oem-sidebar-component .category-group .categories .card .card-header a,
+.oem-sidebar-module .oem-sidebar-component .oem-sidebar-component-heading ul li a,
+.oem-top-level-categories-module .category-list .category {
+    font-weight: bold;
+}
+
+.page-builder-page-layout .page-builder-layout-section.mid-padding .container-wrap,
+.page-builder-page-layout .page-builder-layout-section.padding-15 .container-wrap {
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.page-builder-page-layout .page-builder-layout-section.more-padding .container-wrap,
+.page-builder-page-layout .page-builder-layout-section.padding-30 .container-wrap {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.page-builder-page-layout .page-builder-layout-section .container-wrap {
+    padding: 40px 0;
+}
+
+.product-page-layout.page-builder-page-layout .page-builder-layout-section:first-child .container-wrap {
+    padding-top: 40px;
+}
+
+#layout_search .page-subheader-module .left-content .result-text-wrap,
+#layout_search .page-subheader-module .left-content .result-ymm-text {
+    font-weight: 500;
+}
+
+.oem-sidebar-module .oem-sidebar-component.oem-sidebar-garage .garage-text a {
+    margin-top: 10px;
+}
+
+.search-listing-module .catalog-product .product-partnum-category .catalog-product-id a,
+.search-listing-module .catalog-product .product-partnum-category .catalog-product-id label,
+.search-listing-module .catalog-product .product-partnum-category .catalog-product-id strong {
+    font-weight: 600;
+}
+
+.create-user-form .terms-and-conditions {
+    float: left;
+}
+
+.create-user-form .terms-and-conditions-label {
+    display: inline-block;
+    width: calc(100% - 40px);
+    font-size: 14px;
+    text-align: left;
+}
+
+html body .action-button.place-order-button,
+.action-button.place-order-button {
+    background-color: #176db7;
+    border-radius: 0;
+    text-transform: capitalize;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 8px 15px !important;
+}
+
+html body .action-button.place-order-button svg,
+.search-listing-module .marketplace-product .list-price .list-price-label,
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .reference-code-col,
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .label-row,
+.oem-assemblies-module .part-group h2.related_parts {
+    display: none;
+}
+
+html body .action-button.add-to-wishlist {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+}
+
+.search-listing-module .catalog-product:first-child{
+    border-top: none;
+}
+
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-image-col>a {
+    border: none;
+}
+
+.search-listing-module .catalog-product:last-child {
+    border-bottom: none;
+}
+
+/** Product listing **/
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col {
+    width: 83.33333%;
+}
+
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .col-sm-7 {
+    width: 75%;
+}
+
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .col-sm-4 {
+    /* cf */
+    /*width: 25%;*/
+}
+
+.catalog-products .catalog-product .product-details-col .col-md-8,
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .col-sm-7 {
+    /* cf */
+    /*width: 75%;*/
+    /*width: auto;*/ /* ignore */
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-products .catalog-product .product-details-col .product-title,
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .product-title {
+    order: 1;
+}
+
+.catalog-products .catalog-product .product-details-col .product-partnum-category,
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .product-partnum {
+    order: 2;
+}
+
+.catalog-products .catalog-product .product-details-col .product-more-info,
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .product-more-info {
+    order: 3;
+    margin-top: 0;
+}
+
+.catalog-products .catalog-product .product-details-col .product-selected-dealer,
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .product-selected-dealer {
+    order: 4;
+}
+
+.catalog-products .catalog-product .product-details-col .product-prices,
+.oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .product-pricing {
+    order: 5;
+    position: absolute;
+    right: -18%;
+    width: 15%;
+}
+
+.catalog-product .product-selected-dealer .find-dealer-button-link {
+    font-size: 0.75rem;
+}
+
+.search-listing-module .catalog-product .product-purchase-button .place-order-button,
+.oem-assemblies-module .part-purchase-button {
+    display: inline-block;
+    margin: 1.75rem 0 1rem;
+    padding: 0;
+}
+
+.oem-assemblies-module .part-purchase-button {
+    margin: 4.25rem 0 1rem;
+}
+
+.oem-assemblies-module .core-charge-reference {
+    color: #010101;
+}
+
+.oem-assemblies-module .core-charge-notice sup {
+    color: #010101;
+}
+
+.oem-assemblies-module .core-charge-notice {
+    margin-top: 0.75rem;
+    color: #010101;
+}
+
+/** End Product listing **/
+
+.search-listing-module .catalog-product .product-partnum-category .catalog-product-more-in-category {
+    display: block;
+}
+
+.search-listing-module .marketplace-product .list-price,
+.search-listing-module .marketplace-product .sale-price {
+    display: block;
+    margin-right: 10px;
+}
+
+.catalog-products .catalog-product .product-details-col .col-sm-4 {
+    /* cf */
+    /*width: 25%;*/
+    /* cf */
+    width: auto;
+    float: left;
+    position: static;
+}
+
+.catalog-products .catalog-product .product-details-col .col-sm-4 .cannot-purchase {
+	position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 5px;
+}
+
+@media screen and (max-width: 991px) {
+    .catalog-products .catalog-product .product-details-col .col-sm-4 .cannot-purchase {
+    	position: static;
+    }
+}
+
+.sidebar-header {
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    margin-bottom: 30px;
+}
+
+.sidebar-menu .car-selected-module .fa,
+.sidebar-menu .find-dealer-button .fa {
+    display: none;
+}
+
+.sidebar-menu .page-builder-layout-module + .page-builder-layout-module {
+    margin-top: 0 !important;
+}
+
+.sidebar-menu .car-selected-module .garage-text,
+.sidebar-menu .sidebar-lists a,
+.sidebar-menu .find-dealer-button .find-dealer-text {
+    font-size: 13px;
+    display: block;
+    padding: 12px 0 12px 35px;
+    line-height: 1.5;
+    color: #010101;
+    background-size: 22px !important;
+    margin-left: 0;
+}
+
+.sidebar-menu .car-selected-module .garage-text:hover,
+.sidebar-menu .sidebar-lists a:hover,
+.sidebar-menu .find-dealer-button .find-dealer-text:hover {
+    color: #0090ff;
+    text-decoration: none;
+}
+
+.sidebar-lists {
+    list-style: none;
+    margin: 0;
+}
+
+.sidebar-menu .find-dealer-button {
+    margin-top: 0;
+}
+
+.sidebar-menu .car-selected-module .garage-text {
+    background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/car-dark.png') left 10px no-repeat;
+}
+
+.sidebar-menu .find-dealer-button .find-dealer-text {
+    background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/map-dark.png') left 10px no-repeat;
+    position: relative;
+}
+
+.sidebar-menu .find-dealer-button .find-dealer-text:after {
+    content: "Change";
+    position: absolute;
+    bottom: -15px;
+    left: 35px;
+    color: #176db7;
+}
+
+.sidebar-menu .sidebar-phone a {
+    background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/phone.png') left 10px no-repeat;
+}
+
+.sidebar-menu .sidebar-email a {
+    background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/email.png') left 10px no-repeat;
+}
+
+.product-badges-module .product-badges .product-badge .badge-text strong {
+    font-family: Arial, sans-serif;
+}
+
+.product-page-layout h1.product-title {
+    font-size: 25px;
+    color: #010101;
+}
+
+.product-purchase-module .purchase-box .product-price .you-save .list-value,
+.product-tab-nav-module .tab-nav-wrap li a,
+.product-page-layout ul.field-list li .list-label,
+.product-page-layout .product-section-title {
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}
+
+.product-tab-nav-module .tab-nav-wrap li.tab-active a, .product-page-layout .product-section-title.tab-selected {
+    color: #176db7;
+    border-color: #176db7;
+}
+
+.product-recommended-module .product-recommendations .recommendation-name {
+    color: #176db7;
+}
+
+.product-purchase-module .purchase-box .product-price .you-save .list-value {
+    color: #e23a39;
+}
+
+.product-tab-nav-module .tab-nav-wrap li a,
+.product-page-layout .product-section-title {
+    text-transform: capitalize;
+    color: #010101;
+    font-size: 16px;
+}
+
+.product-fitment-confirmation-module .product-fitment.fits {
+    border: none;
+    background-color: #f4f4f4;
+}
+
+.product-purchase-module .purchase-box .purchase-wrapper .add-to-cart {
+    font-weight: 600;
+    padding: 10px 15px !important;
+}
+
+.product-purchase-module .purchase-box .purchase-wrapper .add-to-cart:before {
+    display: none;
+}
+
+.product-purchase-module .purchase-box .view-offers-link {
+    margin: 10px !important;
+    text-align: center;
+    display: block;
+}
+
+.product-fitment-confirmation-module .product-fitment.fits a {
+    color: #010101;
+}
+
+.product-policies {
+    padding-bottom: 1.5rem;
+}
+
+.product-policies .policy-link {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+#page-contact h4 {
+    color: #010101;
+}
+
+.about-us-banner figure {
+    text-align: center;
+}
+
+.about-us-banner .container-wrap {
+    max-width: 1140px !important;
+}
+
+.about-us-banner figure figcaption * {
+    color: #010101;
+}
+
+.about-us-banner figure img {
+    margin-bottom: 20px;
+}
+
+.about-us-banner figure p {
+    font-size: 12px;
+}
+
+.dseo-top-custom-content {
+    font-size: 12px;
+    line-height: 2;
+}
+
+.dseo-car-selected:not(:only-child) {
+    display: none;
+}
+
+#layout_about .page-builder-page-layout .page-builder-layout-section .container-wrap {
+    padding: 0 0 40px 0;
+}
+
+#text-page-layout h1 {
+    font-size: 32px !important;
+    text-align: center;
+}
+
+#text-page-layout h2 {
+    font-size: 28px !important;
+}
+
+#text-page-layout p {
+    font-size: 12px;
+    line-height: 2;
+}
+
+#text-page-layout ul {
+    font-size: 12px;
+    margin-left: 15px;
+    line-height: 2;
+}
+
+#text-page-layout ol {
+    font-size: 12px;
+    line-height: 2;
+}
+
+@media (max-width: 1200px) {
+    .container-header .main-header .row-search {
+        -ms-flex: 0 0 26%;
+        flex: 0 0 26%;
+        max-width: 26%;
+    }
+    
+    .container-header .main-header .col-logo {
+        -ms-flex: 0 0 50px;
+        flex: 0 0 50px;
+        max-width: 50px;
+    }
+
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.trim-dropdown .dropdown-toggle {
+        min-width: 150px;
+    }
+
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.model-dropdown .dropdown-toggle {
+        min-width: 130px;
+    }
+
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.year-dropdown .dropdown-toggle {
+        min-width: 80px;
+    }
+}
+
+ @media screen and (max-width: 1020px) {
+    .container-header .main-header .row-search {
+    	-ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .main-list > .nav-item:hover > .nav-link,
+    .main-list > .nav-item:hover > .drop-menu {
+        border-bottom-color: #c7c7c7 !important;
+    }
+
+    .main-list > .nav-item:hover > .nav-link,
+    .main-list > .nav-item:hover > .drop-menu ,
+    .main-list .nav-header:hover,
+    .main-list .nav-item .drop-menu:hover,
+    .container-header .mobile-view .find-dealer-button .find-dealer-text:hover,
+    .container-header .mobile-view .car-selected-module .garage-text:hover,
+    .container-header .mobile-view #action_account .your-account:hover {
+        color: #0090ff !important;
+    }
+
+    .container-header .mobile-view #action_account .account.flyout {
+        left: 20px;
+    }
+
+    .container-header .main-header .container-wrap {
+        padding: 21px 40px !important;
+    }
+
+    .container-header .main-header .row-menu {
+        position: fixed;
+        overflow-x: auto;
+        top: 140px;
+        height: calc(100% - 50px);
+        z-index: 999;
+        background: #ffffff;
+        width: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+
+    .container-header .main-header .row-menu .block-modules .full-height-wrapper {
+        padding-bottom: 220px;
+    }
+
+    .mobile-toggle,
+    .mobile-cart-link {
+        -ms-flex: 0 0 50px;
+        flex: 0 0 50px;
+        max-width: 50px;
+    }
+
+    .container-header .row-menu .block-modules {
+        display: block;
+        width: 100%;
+    }
+
+    .main-header .container-wrap .row-logo .page-builder-layout-column-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container-header .col-search .search-bar-component input {
+        padding-left: 40px;
+    }
+
+    .container-header .main-header .col-logo {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        min-width: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .main-header .store-logo-module .store-logo-link img {
+        max-width: 42px;
+    }
+    
+    @media (max-width: 575px) {
+		.main-header .store-logo-module {
+			height: 42px !important;
+		}
+	}
+
+    .container-header .main-header .row-search,
+    .container-header .main-header .row-logo,
+    .container-header .main-header .col-search {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .container-header .main-header .row-logo {
+        margin-top: 0;
+    }
+
+    .container-header .main-header .row-search {
+        margin: 10px 0 !important;
+    }
+
+    .main-header .main-list {
+        flex-direction: column;
+    }
+
+    .main-list .nav-item {
+        position: relative;
+    }
+
+    .main-header .main-list > li {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+        position: relative;
+    }
+
+    .main-list .nav-header,
+    .mega-menu .nav-link {
+        font-size: 18px;
+        padding: 20px 15px;
+        cursor: pointer;
+    }
+
+    .menu-child {
+        overflow: hidden;
+        height: 0;
+        transition: all ease .5s;
+    }
+
+    .menu-child.active {
+        height: auto;
+        transition: all ease .5s;
+    }
+
+    .main-list > .nav-item > .nav-link,
+    .container-header .mobile-view .find-dealer-button .find-dealer-text,
+    .container-header .mobile-view .car-selected-module .garage-text,
+    .container-header .mobile-view #action_account .your-account,
+    .container-header .mobile-view .your-account {
+        border-bottom: 1px solid #c7c7c7;
+        padding: 20px 15px;
+        line-height: 1.5;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+        color: #222222;
+        display: block;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .container-header .mobile-view .find-dealer-button .find-dealer-text,
+    .container-header .mobile-view .car-selected-module .garage-text,
+    .container-header .mobile-view #action_account .your-account,
+    .container-header .mobile-view .your-account {
+        /* padding-left: 60px;*/
+        font-weight: 500;
+        margin-left: 0;
+    }
+    /*
+    .container-header .mobile-view .find-dealer-button .find-dealer-text {
+        background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/map-dark.png') 20px center no-repeat;
+        background-size: 30px !important;
+    }
+
+    .container-header .mobile-view .car-selected-module .garage-text {
+        background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/car-dark.png') 20px center no-repeat;
+        background-size: 30px !important;
+    }
+
+    .container-header .mobile-view #action_account .your-account,
+    .container-header .mobile-view .your-account {
+        background: url('https://rp-dev-sites.s3.amazonaws.com/112a83dd367e79c64192aa8c1260b42a/design/user-dark.png') 20px center no-repeat;
+        background-size: 25px !important;
+    }
+    */
+
+    .container-header .mobile-view .car-selected-module .garage-component ,
+    .container-header .mobile-view #action_account {
+        display: block;
+    }
+
+    .main-list .has-child > .nav-link:before,
+    .main-list .has-child > .nav-header:before {
+        content: "\F107";
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        position: absolute;
+        right: 15px;
+        font-size: 30px;
+        top: 16px;
+        transition: all ease .5s;
+    }
+
+    .main-list .has-child.open > .nav-link:before,
+    .main-list .has-child.open > .nav-header:before {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+    }
+
+    .main-header .main-list li li > .nav-header {
+        padding-left: 30px;
+    }
+
+    .main-header .main-list li li li > .nav-link {
+        padding-left: 50px;
+    }
+
+    .drop-menu.open > .fa {
+        transform: rotate(180deg);
+    }
+
+    .container-header .top-header .col-car,
+    .container-header .top-header .col-login,
+    .container-header .top-header .col-cart,
+    .container-header .mobile-view .find-dealer-button .fa {
+        display: none;
+    }
+
+    .container-header .main-header {
+        position: fixed;
+        top: 0;
+        z-index: 111;
+        width: 100%;
+    }
+
+    .page-content {
+        min-height: 500px;
+        /* cf */
+        /*margin-top: 113px;*/
+        margin-top: 100px;
+    }
+
+    .vehicle-picker-dropdown-module .header-text,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown,
+    .search-vehicle-section .search-or,
+    .search-vehicle-section .search-vin,
+    .search-vehicle-section .search-vehicle {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .search-vehicle-section .search-or,
+    .search-vehicle-section .vehicle-picker-dropdown-module .header-text {
+        text-align: center;
+        margin: 10px 0 !important;
+        font-size: 22px;
+    }
+
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown {
+        margin-left: 1rem;
+    }
+
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown:first-child {
+        margin-left: 0;
+    }
+
+    .search-vehicle-section .vehicle-picker-dropdown-module,
+    .search-vehicle-section .page-builder-layout-column-wrap {
+        flex-direction: column;
+    }
+
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.year-dropdown,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.model-dropdown,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.trim-dropdown {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .search-by-vin-module .btn {
+        -ms-flex: 0 0 120px;
+        flex: 0 0 120px;
+        max-width: 120px;
+        margin-left: 20px !important;
+    }
+
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.trim-dropdown .dropdown-toggle,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.model-dropdown .dropdown-toggle,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.year-dropdown .dropdown-toggle {
+        min-width: auto;
+    }
+
+    .vehicle-picker-dropdown-module .header-text,
+    .search-vehicle-section .search-or {
+
+    }
+
+    .catalog-products .catalog-product .product-details-col .product-prices,
+    .oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .product-pricing {
+        position: initial;
+        margin-top: 15px;
+    }
+
+    .search-listing-module .catalog-product .product-purchase-button .place-order-button,
+    .oem-assemblies-module .part-purchase-button {
+        margin: 0 0 1rem;
+    }
+
+    .search-listing-module .catalog-product .product-purchase-button {
+        padding: 10px 0 0;
+    }
+
+    .vehicle-models-section .model {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .search-bar-module .search-bar-component button {
+        padding: 8px 5px;
+    }
+
+    .main-header .main-list li .hm-wrap {
+        display: none;
+    }
+
+    .search-vehicle-section .container-wrap,
+    .top-accessories-section .container-wrap,
+    .featured-product-section .container-wrap {
+        padding-bottom: 20px !important;
+        padding-top: 20px !important;
+    }
+
+    .cart-component .cart-button .cart-items {
+        left: 7px;
+        bottom: -10px;
+        font-size: 12px;
+        padding: 1px 4px 0;
+    }
+
+
+    /** Product listing **/
+    .search-listing-module .catalog-product .product-details-col {
+        /* cf */
+        /*width: 83.33333%;*/
+    }
+
+    .search-listing-module .catalog-product .product-image-col {
+        /* cf */
+        /*width: 16.777%;*/
+    }
+
+    .catalog-products .catalog-product .product-details-col .col-md-8,
+    .oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .col-sm-7 {
+        /* cf - testing-1 */
+        /*width: 70%;*/
+        width: 100%;
+    }
+
+    .oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .col-sm-4,
+    .catalog-products .catalog-product .product-details-col .col-sm-4 {
+        /* cf */
+        /*width: 30%;*/
+    }
+
+    #page-login-create .login-combined-module {
+        margin-top: 0;
+    }
+
+    #layout_about .page-builder-page-layout .page-builder-layout-section.about-details .container-wrap {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.year-dropdown,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.model-dropdown,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.trim-dropdown {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 50%;
+        margin-left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .featured-product-section .featured-products-module .featured-products .featured-product {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .featured-product-section .featured-products-module .featured-products .featured-product .image-display .image-wrapper img {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .featured-product-section .featured-products-module .featured-products .featured-product {
+        margin-bottom: 20px;
+    }
+
+    .vehicle-models-section .model {
+        -ms-flex: 0 0 33.33%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    .mercedes-benz-sites .page-builder-layout-column {
+        margin-bottom: 10px;
+        width: 50%;
+        float: left;
+    }
+
+    .mercedes-benz-sites .page-builder-layout-column {
+        margin-bottom: 0;
+    }
+
+    .main-footer .custom-heading .heading {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .newsletters-section .page-builder-layout-column {
+        width: 50%;
+        float: left;
+    }
+
+    .quality-craft .quality-craft-details {
+        margin-left: 0;
+    }
+
+    .search-vehicle-section .container-wrap {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .search-listing-module .catalog-product .product-details-col {
+        /* cf */
+        /*width: 83.33333%;*/
+    }
+
+    .top-accessories-section .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .page-builder-page-layout .top-accessories-section .page-builder-layout-row:first-child {
+        margin-bottom: 20px;
+    }
+
+    .page-builder-page-layout .top-accessories-section .page-builder-layout-row+.page-builder-layout-row {
+        margin-top: 0;
+    }
+
+    .ft-lists-row .block-modules {
+        margin-bottom: 15px;
+    }
+
+    #page-login-create .login-combined-module {
+        margin-top: 20px;
+    }
+
+    .dealer-selection-modal .modal-container .modal-content .close-button button {
+        top: -.75em;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.year-dropdown,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.model-dropdown,
+    .search-vehicle-section .vehicle-picker-dropdown-module .vehicle-picker-dropdown .dropdown.trim-dropdown,
+    .search-vehicle-section .search-by-vin-module input[type=text],
+    .search-by-vin-module .btn {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 5px !important;
+        margin-left: 0 !important;
+    }
+
+    .search-vehicle-section .search-by-vin-module input[type=text] {
+        margin-bottom: 20px !important;
+    }
+
+    .main-footer .social-links-module .nav_social {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .main-footer .subscribe-email,
+    .newsletter-signup-module .call-to-action-button {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .main-footer .subscribe-email {
+        margin-bottom: 15px !important;
+    }
+
+    .container-header .main-header .container-wrap {
+        padding: 10px 30px !important;
+    }
+
+    .container-header .main-header .row-menu {
+        top: 118px;
+    }
+
+    .page-content {
+        /* cf */
+        /*margin-top: 92px;*/
+        margin-top: 78px;
+    }
+
+    .main-footer {
+        position: relative;
+        /* cf */
+        /*padding: 70px 0 280px;*/
+        padding: 15px 0 280px;
+    }
+
+    .main-footer .stay-touch-section,
+    .main-footer .newsletters-section {
+        position: absolute;
+        right: 10px;
+        left: 10px;
+    }
+
+    .main-footer .stay-touch-section {
+        bottom: 220px;
+    }
+
+    .main-footer .newsletters-section {
+        bottom: 20px;
+    }
+
+    .social-links-module .layout-inline li+li {
+        margin-left: 10px;
+    }
+
+    .newsletters-section .page-builder-layout-column {
+        width: 100%;
+    }
+
+    .newsletters-section .col-md-6 {
+        position: unset;
+    }
+
+    .sub-footer .links-list-module.list-style-footer .links-list a {
+        padding: 0;
+    }
+
+    .sub-footer .links-list-module .links-list li {
+        /*float: left;*/
+        display: block;
+        margin-left: 0 !important;
+    }
+
+    .sub-footer .links-list-module .links-list li:nth-child(3) {
+        clear: both;
+    }
+
+    .sub-footer .links-list-module .links-list li:nth-child(even) {
+        /*margin-left: 12px !important;*/
+    }
+
+    .customer-support .call-to-action-module .cta-content {
+        max-width: 270px;
+    }
+
+    .top-accessories-section figure img {
+        width: 100%;
+    }
+
+    /**
+    .catalog-products .catalog-product .product-details-col .col-md-8,
+    .oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .col-sm-7,
+    .oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .col-sm-4,
+    .catalog-products .catalog-product .product-details-col .col-sm-4,
+    .search-listing-module .catalog-product .product-image-col,
+    .oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-image-col {
+        width: 100%;
+        padding: 0;
+    }
+
+    .catalog-products .catalog-product .product-details-col .product-prices,
+    .oem-assemblies-module .part-group .part-group-container .all-component-parts .catalog-product .product-details-col .product-pricing {
+        position: relative;
+        right: auto;
+        width: auto;
+    }
+
+    .search-listing-module .catalog-product .product-purchase-button,
+    .oem-assemblies-module .part-purchase-button {
+        margin: 10px 0 0;
+    }
+
+    .search-listing-module .catalog-product .product-image-col {
+        display: block;
+    }
+    **/
+}
+@media (max-width: 320px) {
+    .social-links-module .layout-inline li+li {
+        margin-left: 8px;
+    }
+}
+
+@media (min-width: 768px) {
+    .top-accessories-section .row-full-height-md .col-full-height:last-child {
+        padding-right: 15px;
+    }
+
+    .top-accessories-section .row-full-height-md .col-full-height:first-child {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .mt-module {
+        margin-top: -10px !important;
+    }
+
+    .mt-module h1 {
+        margin-top: 0;
+    }
+
+    .mobile-view,
+    .mobile-toggle,
+    .mobile-cart-link {
+        display: none;
+    }
+
+    .container-header .main-header .row-menu {
+        display: block !important;
+    }
+
+    .main-list > .nav-item .drop-menu {
+        display: none;
+    }
+
+    .mega-menu {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 11;
+        transition: all .25s ease;
+        padding: 20px 30px;
+        opacity: 0;
+        visibility: hidden;
+        border: 1px solid #a1a1a1;
+        display: flex;
+        justify-content: flex-start;
+        flex: auto;
+    }
+
+    /**.mega-menu .menu-wrap {
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        min-width: 0;
+        max-width: 100%;
+    }**/
+
+    .mega-menu .mega-wrap {
+        list-style-type: none;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4px 0px 4px 0px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .mega-menu .mega-wrap.two-column {
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .mega-menu .mega-wrap.two-column .menu-child {
+        column-count: 2;
+    }
+    
+    .mega-menu .mega-wrap.two-column .menu-child li {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .powered-by {
+        float: right;
+        margin-top: 0 !important;
+    }
+
+    .mega-wrap .menu-wrap {
+        padding-bottom: 20px;
+    }
+}
+
+/*---- PERFORMANCE UPDATES ----*/
+#mobile-toggle #button-toggle {
+	padding: 0;
+}
+
+@media (min-width: 768px) {
+	.home-slider {
+        min-height: 300px;
+        overflow: hidden;
+    }
+    
+    .col-logo {
+        height: 40px;
+    }
+
+    .vehicle-models-section .model a {
+        height: 90px;
+    }
+}
+
+@media (min-width: 992px) {
+	.home-slider {
+       	height: 350px;
+    }
+    
+    .container-header {
+        height: 130px;
+    }
+    
+    .container-header .page-builder-page-layout .page-builder-layout-section:nth-of-type(2) {
+    	height: 46px;
+    }
+    
+    .container-header .page-builder-page-layout .page-builder-layout-section:nth-of-type(3) {
+    	height: 84px;
+    }
+
+    .main-list > .nav-item > .nav-link {
+        height: 84px;
+    }
+
+    .main-search-wrapper #main_search_3 {
+        height: 36px;
+    }
+
+    .select-your-vehicle-header {
+    	height: 115px;
+    }
+    
+    .vehicle-header {
+        height: 40px;
+    }
+    
+    .search-vehicle-section {
+    	height: 113px;
+    }
+
+    .search-vehicle {
+        height: 43px;
+    }
+    
+    .vehicle-picker-dropdown {
+    	white-space: nowrap;
+    }
+
+    .model-row {
+        height: 114px;
+    }
+}
+
+@media (min-width: 1200px) {
+	.home-slider {
+        height: 430px;
+    }
+}
+
+@media (min-width: 1500px) {
+	.home-slider {
+        height: 530px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-header .page-builder-page-layout .page-builder-layout-section:nth-of-type(2) {
+    	height: 38px;
+    }
+    
+    .container-header .page-builder-page-layout .page-builder-layout-section:nth-of-type(3) {
+    	height: 138px;
+    }
+    
+	.select-your-vehicle-header {
+    	height: 125px;
+    }
+}
+
+@media (max-width: 575px) {
+	.container-header .page-builder-page-layout .page-builder-layout-section:nth-of-type(2) {
+    	height: 38px;
+    }
+    
+    .container-header .page-builder-page-layout .page-builder-layout-section:nth-of-type(3) {
+    	height: 118px;
+    }
+    
+    .select-your-vehicle-header-section .vehicle-selector-header {
+     	height 110px;   
+    }
+}
+
+/* Class Pages */
+.class-models {
+	width:100%;
+	margin-right:3%;
+}
+.class-models ul {
+    column-count: 3;
+    column-gap: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.class-models li {
+    column-count: 3;
+    column-gap: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+        margin: 0 0 10px 0;
+}
+.class-models ul li {
+	width: 49%;
+  height: inherit;
+}
+.class-models ul li a {
+	border: 1px solid black;
+	padding: 12px;
+	width: 100%;
+	background-color:#f1f1f1;
+	border-radius:5px;
+    color: black;
+    font-size: 16px
+}
+.class-models ul li a:hover {
+	border: 1px solid black;
+	padding: 12px;
+	width: 100%;
+	background-color:black;
+	border-radius:3px;
+	color: white;
+}
+@media only screen and (max-width:767px) {
+    .class-models ul {
+        width: 100%;
+    }
+}
+
+/* Footer Padding Adjustments */
+.stay-touch-section .heading {
+	margin-bottom: 14px;
+}
+
+.other-sites-section .heading {
+	margin-bottom: 16px;
+}
+
+/* Product Pages & Results Pages */
+.list-price {
+    display: none!important;
+}
+.you-save {
+    display: none!important;
+}
+.product-details-module .product-description .description_body p {
+    font-size: 14px;
+}
+
+/* MSRP & Discount Removal - Cart */
+#rp_global_add_to_cart .current_product .product_details_col ul li.list_price {
+    display:none!important;
+}
+
+/* Sale Price - Product Pages */
+.product-purchase-module .purchase-box .product-price .price-wholesale .list-label, .product-purchase-module .purchase-box .product-price .price-wholesale label, .product-purchase-module .purchase-box .product-price .sale-price .list-label, .product-purchase-module .purchase-box .product-price .sale-price label {
+    white-space: nowrap;
+    padding-top: 2px;
+}
+
+/* DSEO & Vehicle Pages */
+.dseo-top-custom-content {
+    font-size: 14px;
+}
+.oem-vehicle-picker-module .dynamic-content p {
+    font-size: 14px;
+}
+.page-subheader-component h3 {
+    font-size: 14px;
+}
+
+/* Banner */
+.promotional-banner-wrap .promotional-banner-text {
+    font-size: 16px!important;
+}
+.text-color-dark .promotional-banner-wrap .promotional-banner-link {
+    color: red!important;
+}
+
+/* Vehicle picker links to buttons */
+.oem-vehicle-picker-module .vehicle-column.non-year {
+	width:40%;
+	margin-right:3%;
+}
+.oem-vehicle-picker-module .vehicle-column ul {
+    width: 100%;
+}
+.oem-vehicle-picker-module .vehicle-column ul li {
+	width: 100%;
+	margin:0 15px 15px 0
+}
+.oem-vehicle-picker-module .vehicle-column ul li a {
+	border: 1px solid black;
+	padding: 12px;
+	width: 100%;
+	background-color:#f1f1f1;
+	border-radius:5px;
+    color: black;
+}
+.oem-vehicle-picker-module .vehicle-column ul li a:hover {
+	border: 1px solid white;
+	padding: 12px;
+	width: 100%;
+	background-color:black;
+	border-radius:5px;
+	color: #fff;
+}
+@media only screen and (max-width:767px) {
+    .oem-vehicle-picker-module .vehicle-column ul {
+        width: 100%;
+    }
+}
+
+
+/* USERWAY */
+
+body .uwy.userway_p6 .uai {
+    top: auto !important;
+    bottom: 13px !important;
+    left: calc(100vw - 90px) !important;
+}
